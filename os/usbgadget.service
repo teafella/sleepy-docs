@@ -1,0 +1,13 @@
+[Unit]
+Description=PI5 USB Gadget
+After=network-online.target
+Wants=network-online.target
+#After=systemd-modules-load.service
+  
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/pi/VIDOS/os/usb_gadget.sh
+  
+[Install]
+WantedBy=sysinit.target
