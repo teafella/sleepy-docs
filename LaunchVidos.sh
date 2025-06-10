@@ -73,7 +73,7 @@ cd $DIR
 			echo "Updating Sleepy PCB Firmware"
 			sudo ./os/UpdateFirmware.sh
             # echo "Running update logic..."
-            : # (no-op, replace with your update command)
+            # : # (no-op, replace with your update command)
         fi
 
 		echo "Starting VIDOS"
