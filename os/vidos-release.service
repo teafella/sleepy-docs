@@ -1,5 +1,5 @@
 [Unit]
-Description=STARTS VIDOS
+Description=STARTS VIDOS RELEASE VERSION
 DefaultDependencies=false
 StartLimitIntervalSec=0
 
@@ -7,7 +7,7 @@ StartLimitIntervalSec=0
 TTYPath=/dev/tty1
 PAMName=systemd-user
 Type=simple
-ExecStart=/home/pi/Documents/VIDOS/LaunchVidos.sh
+ExecStart=/home/pi/Documents/VIDOS-release/LaunchVidos.sh
 Restart=always
 RestartSec=1
 
