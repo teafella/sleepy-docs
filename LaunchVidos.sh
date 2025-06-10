@@ -76,6 +76,12 @@ cd $DIR
             # : # (no-op, replace with your update command)
         fi
 
+        # save the date of the latest git commit 
+        GIT_COMMIT_DATE=$(sudo -E -u $(logname) git log -1 --format="%cd" --date=format:"%b %d, %Y")
+        echo "Latest git commit date: $GIT_COMMIT_DATE"
+        #save the date to os/version.json
+        mkdir -p ./os/version.json
+        echo "{\"date\": \"$GIT_COMMIT_DATE\"}" > ./os/version.json
 		echo "Starting VIDOS"
         sudo nice --18 ./main.out  2>&1 | tee ./log.txt
     else
