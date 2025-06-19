@@ -1,0 +1,14 @@
+[Unit]
+Description=Starts Sleepy Webserver
+DefaultDependencies=false            # Very important! Without this line, the s$
+                                     # would wait until networking.service
+                                     # has finished initialization. This could $
+                                     # more seconds because of DHCP, IP attribu$
+
+[Service]
+Type=simple
+ExecStart=/home/pi/VIDOS/src/server/StartWebserver.sh
+WorkingDirectory=/home/pi/VIDOS/src/server/
+
+[Install]
+WantedBy=local-fs.target
