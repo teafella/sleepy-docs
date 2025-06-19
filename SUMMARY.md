@@ -2,6 +2,13 @@
 
 * [Sleepy Docs Main Menu](README.md)
 
+## Hypno 2 <a href="#hypno2" id="hypno2"></a>
+
+* [Hypno 2 Manual](hypno2/hypno-2-manual.md)
+* [Hypno 2 Firmware](hypno2/hypno-2-firmware.md)
+* [Hypno 2 FAQ](hypno2/hypno-2-faq.md)
+* [Hypno 2 Troubleshooting Guide](hypno2/hypno-2-troubleshooting.md)
+
 ## Mezzz & vidOS
 
 * [Mezzz Manual](mezzz-and-vidos/mezzz-manual.md)
@@ -14,6 +21,7 @@
 * [Hypno 1 Firmware](hypno/hypno-firmware.md)
 * [Hypno 1 FAQ](hypno/hypno-faq.md)
 * [Hypno 1 Troubleshooting Guide](hypno/hypno-set-up-and-troubleshooting-manual.md)
+
 
 ## Accessories
 
