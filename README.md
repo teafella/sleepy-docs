@@ -4,12 +4,10 @@ description: The Premier Portal Into the Sleepyverse.
 
 # Sleepy Docs Main Menu
 
-{% hint style="danger" %}
-Pro Tip: Try the search in the top right! It slaps.
-{% endhint %}
+{% hint style="success" %}
+Try the search in the top right! It slaps.
 
-{% hint style="warning" %}
-On Mobile? Tap the three stacked lines on the top left to see a tree of all Sleepy Docs
+Mobile Users: Tap the three stacked lines on the top left to see a tree of all Sleepy Docs &#x20;
 {% endhint %}
 
 <figure><img src=".gitbook/assets/Mezzz Header Horizontal_Mezzz Header Horizontal_Mezzz Header Horizontal.jpg" alt="" width="375"><figcaption></figcaption></figure>
@@ -38,10 +36,6 @@ On Mobile? Tap the three stacked lines on the top left to see a tree of all Slee
 
 {% content-ref url="hypno/hypno-faq.md" %}
 [hypno-faq.md](hypno/hypno-faq.md)
-{% endcontent-ref %}
-
-{% content-ref url="archived-deprecated/historical-hypno-versions-expanders-and-pi-variants.md" %}
-[historical-hypno-versions-expanders-and-pi-variants.md](archived-deprecated/historical-hypno-versions-expanders-and-pi-variants.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
