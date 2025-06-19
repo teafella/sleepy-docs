@@ -8,12 +8,12 @@
 * [Mezzz Firmware (& vidOS Patch Notes)](mezzz-and-vidos/mezzz-firmware-and-vidos-patch-notes.md)
 * [vidOS Manual, Maps & Docs](mezzz-and-vidos/vidos-manual-maps-and-docs.md)
 
-## Hypno
+## Hypno 1 <a href="#hypno" id="hypno"></a>
 
-* [Hypno Manual](hypno/hypno-manual.md)
-* [Hypno Firmware](hypno/hypno-firmware.md)
-* [Hypno FAQ](hypno/hypno-faq.md)
-* [Hypno Troubleshooting Guide](hypno/hypno-set-up-and-troubleshooting-manual.md)
+* [Hypno 1 Manual](hypno/hypno-manual.md)
+* [Hypno 1 Firmware](hypno/hypno-firmware.md)
+* [Hypno 1 FAQ](hypno/hypno-faq.md)
+* [Hypno 1 Troubleshooting Guide](hypno/hypno-set-up-and-troubleshooting-manual.md)
 
 ## Accessories
 
