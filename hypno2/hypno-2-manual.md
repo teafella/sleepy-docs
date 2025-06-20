@@ -36,6 +36,30 @@ The built-in microphone creates visuals that respond to sound. Adjust sensitivit
 
 Connect video sources via USB or capture devices for live video processing.
 
+## Supported File Formats
+
+### Images
+- **Raster Images**: JPEG, PNG, BMP, GIF
+- **Vector Graphics**: SVG (Scalable Vector Graphics)
+
+SVG files provide crisp, scalable graphics that maintain quality at any resolution. Perfect for logos, icons, and geometric patterns that can scale from small UI elements to full-screen visuals.
+
+## Overview
+
+Hypno 2 is a hardware video synthesizer with advanced signal processing capabilities.
+
+## Controls and Interface
+
+### Mod Menu
+
+The mod menu displays real-time information about modulation sources and inputs:
+
+- **CV Inputs**: Shows the current values of all connected CV inputs with visual indicators on the left side
+- **Audio Input**: Displays the current audio input level with an ear icon on the left side
+- **Trigger Interval BPM**: Shows beats per minute readings for each trigger input @ 64ppqn
+
+The trigger interval BPM display converts the frequency of incoming trigger signals into beats per minute, useful for syncing visual content to musical tempo. Each trigger input shows its own BPM readout with a clock icon, positioned vertically along the right edge of the screen for easy visibility.
+
 {% hint style="success" %}
 Need help? Check the [FAQ](hypno-2-faq.md) or [Troubleshooting Guide](hypno-2-troubleshooting.md)
 {% endhint %} 
