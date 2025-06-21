@@ -60,16 +60,6 @@ The mod menu displays real-time information about modulation sources and inputs:
 
 The trigger interval BPM display converts the frequency of incoming trigger signals into beats per minute, useful for syncing visual content to musical tempo. Each trigger input shows its own BPM readout with a clock icon, positioned vertically along the right edge of the screen for easy visibility.
 
-### Settings Menu
-
-The settings menu provides access to system configuration and advanced features:
-
-- **Web Browser**: Opens an integrated web browser for accessing online content and documentation (NOT WORKING)
-- **Network Settings**: Configure WiFi connections and network parameters
-- **System Information**: View device status and version information
-
-The integrated web browser allows you to display web content directly within Hypno 2's interface, useful for accessing online documentation, web-based control interfaces, or displaying web-sourced visuals as part of your performance.
-
 {% hint style="success" %}
 Need help? Check the [FAQ](hypno-2-faq.md) or [Troubleshooting Guide](hypno-2-troubleshooting.md)
 {% endhint %} 
