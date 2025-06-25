@@ -36,6 +36,20 @@ The built-in microphone creates visuals that respond to sound. Adjust sensitivit
 
 Connect video sources via USB or capture devices for live video processing.
 
+## Modulation System
+
+Hypno 2 features advanced parameter modulation capabilities that can animate your visuals automatically:
+
+### Modulation Types
+- **Sine Wave**: Smooth cyclic modulation
+- **Cosine Wave**: 90-degree phase shifted sine wave
+- **Triangle Wave**: Linear up-and-down modulation
+- **Ramp Wave**: Sawtooth-style linear modulation
+- **Smooth Random**: Natural-looking organic modulation using advanced Perlin noise
+
+### Smooth Random Modulation
+The smooth random modulation uses sophisticated Perlin noise algorithms to create natural, organic-looking parameter changes. Unlike harsh random jumps, this creates smooth, flowing variations that feel musical and organic - perfect for creating breathing, evolving visuals that never repeat exactly the same way.
+
 ## Supported File Formats
 
 ### Images
