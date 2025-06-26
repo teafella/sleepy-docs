@@ -38,17 +38,41 @@ Connect video sources via USB or capture devices for live video processing.
 
 ## Modulation System
 
-Hypno 2 features advanced parameter modulation capabilities that can animate your visuals automatically:
+Hypno 2 features advanced parameter modulation capabilities that can animate your visuals automatically. Each knob can be modulated by multiple sources with independent gain control.
 
-### Modulation Types
+### Modulation Sources
+- **DC Sources**: Static modulation values (DC_1 through DC_4)
+- **AC Sources**: Audio modulation inputs (AC_1)
+- **Audio Following**: Built-in microphone with adjustable magnitude and slew rate
+- **BPM Sync**: Sync to external clock sources
+
+### Modulation Functions
 - **Sine Wave**: Smooth cyclic modulation
-- **Cosine Wave**: 90-degree phase shifted sine wave
+- **Cosine Wave**: 90-degree phase shifted sine wave  
 - **Triangle Wave**: Linear up-and-down modulation
 - **Ramp Wave**: Sawtooth-style linear modulation
-- **Smooth Random**: Natural-looking organic modulation using advanced Perlin noise
+- **Tangent Wave**: Exponential-style periodic modulation
+- **Smooth Random**: Natural organic modulation using Perlin noise
+- **Pulse Wave**: Square wave with 50% duty cycle for strobe effects
+- **Exponential**: Fast rise curve for crescendo effects
+- **Logarithmic**: Fast attack, slow decay for natural decay
+- **Stepped Random**: Sample & hold random values (16 steps per cycle)
+- **Bounce**: Bouncing ball physics with 4 bounces per cycle
+- **Chaos**: Lorenz attractor chaotic system for unpredictable patterns
+- **Heartbeat**: Double-peak biological rhythm pattern
+- **Pendulum**: Physics-based pendulum motion with non-linear timing
 
-### Smooth Random Modulation
-The smooth random modulation uses sophisticated Perlin noise algorithms to create natural, organic-looking parameter changes. Unlike harsh random jumps, this creates smooth, flowing variations that feel musical and organic - perfect for creating breathing, evolving visuals that never repeat exactly the same way.
+### BPM Sync Features
+When BPM sync is enabled, modulation can lock to external clock sources:
+
+**Division Options**: 1/32, 1/16, 1/8, 1/4, 1/2, 1/1, 2x, 4x, 8x, 16x  
+**Sync Sources**: Two independent trigger inputs  
+**Phase Continuity**: Smooth transitions when changing divisions or BPM
+
+### Audio Following
+The built-in microphone can modulate parameters with adjustable:
+- **Magnitude**: Sensitivity to audio input (bipolar -1 to +1)  
+- **Slew Rate**: Smoothness of audio response (0 to 1)
 
 ## Supported File Formats
 
