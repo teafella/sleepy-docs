@@ -80,7 +80,7 @@ The built-in microphone can modulate parameters with adjustable:
 - **Raster Images**: JPEG, PNG, BMP, GIF
 - **Vector Graphics**: SVG (Scalable Vector Graphics)
 
-SVG files provide crisp, scalable graphics that maintain quality at any resolution. Perfect for logos, icons, and geometric patterns that can scale from small UI elements to full-screen visuals.
+SVG files provide crisp, scalable graphics that maintain quality at any resolution. The Hypno 2 automatically renders SVG files at optimal quality when loaded into channels, ensuring sharp, pixelation-free visuals perfect for logos, icons, and geometric patterns that can scale from small UI elements to full-screen visuals.
 
 ## Overview
 
