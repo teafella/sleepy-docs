@@ -10,31 +10,105 @@ Hypno 2 is a hardware video synthesizer with 3 knobs, 3 buttons, CV inputs and b
 
 ## Quick Start
 
-1. Connect HDMI to your display (Optional, can use built-in display)
-2. Power on display first, then Hypno 2
-3. Use the 3 knobs to control parameters
-4. Press knobs for additional functions
-5. Use the 3 buttons for presets and navigation
+1. Connect the USB_C Power Input
+2. Use the 3 knobs to control parameters
+3. Press knobs for additional functions
+4. Use the 3 buttons for presets and navigation
 
 ## Controls
 
-### Knobs
-- **Left Knob**: Shape and pattern control
-- **Center Knob**: Color and effects  
-- **Right Knob**: Movement and feedback
+Hypno 2 has two different control modes depending on whether you're using the main video synthesizer application or desktop mode.
 
-### Buttons
-- **Left Button**: Channel 1 Select
-- **Center Button**: Master Channel Select
-- **Right Button**: Channel 3 Select
 
-## Audio Reactive Mode
+### Hardware Overview
+- **3 Pushable Encoders**: Rotary encoders that can be turned and pressed
+- **3 Keyboard Buttons**: Dedicated buttons for navigation and channel selection
+- **Touch Interface**: 800×480 touchscreen for menu navigation
 
-The built-in microphone creates visuals that respond to sound. Adjust sensitivity with the audio controls.
+### Main Application Mode (Video Synthesizer)
 
-## Video Input
+#### Encoders
+- **Left Encoder (Encoder 0)**: Controls leftmost parameters and UI elements
+- **Center Encoder (Encoder 1)**: Controls center parameters and UI elements  
+- **Right Encoder (Encoder 2)**: Controls rightmost parameters and UI elements
+- **Spatial Mapping**: Each encoder corresponds to its physical position on screen
 
-Connect video sources via USB or capture devices for live video processing.
+#### Buttons (Main App)
+- **Button 0 (Left)**: Channel and navigation functions
+- **Button 1 (Center)**: Channel and navigation functions
+- **Button 2 (Right)**: Channel and navigation functions
+- **Button Combinations**: Simultaneous button presses for special functions
+
+#### Channel System
+- **16 Total Channels**: Channels 1-15 for video synthesis, Channel 16 for master effects
+- **Channel Selection**: Use buttons to switch between channels
+- **Parameter Pages**: Each channel has multiple pages of 3 parameters each
+
+### Desktop Mode (Raspberry Pi Desktop)
+
+When you switch to desktop mode (accessible via Settings → "Go to Desktop"), the hardware controls emulate standard computer input:
+
+#### Encoders (Desktop Mode)
+- **Left Encoder**: Mouse X movement
+- **Center Encoder**: Mouse scroll wheel
+- **Right Encoder**: Mouse Y movement
+
+#### Buttons (Desktop Mode)
+- **Button 0**: ESC key
+- **Button 1**: SPACE key
+- **Button 2**: ENTER key
+- **Button 3**: Right mouse click
+- **Button 4**: Middle mouse click
+- **Button 5**: Left mouse click
+- **Button 0 + Button 2**: F11 key (fullscreen toggle)
+
+This allows you to navigate the Raspberry Pi desktop environment using the hardware controls.
+
+## Interface Navigation
+
+Hypno 2 features a sophisticated touch-optimized interface designed for 800×480 displays with consistent visual language and intuitive navigation.
+
+### Screen Modes
+
+#### Fullscreen Mode (Immersive View)
+- **Purpose**: Clean output display without UI elements for performance or presentation
+- **Access**: Touch anywhere on the screen from any mode to toggle
+- **Use**: Preview your visual creation or for live performance
+- **Return**: Touch anywhere in fullscreen to return to the control interface
+
+#### Home Screen (Control Interface)
+- **Purpose**: Main control center for parameters, settings, and navigation
+- **Features**: Parameter control knobs, transport controls, recording controls, quick access buttons
+
+### Visual Design Language
+- **Black backgrounds**: Touchable buttons and interactive elements
+- **White backgrounds**: Non-interactive labels and information
+- **Blue indicators**: Selected or active elements
+- **Color inversion**: Visual feedback when buttons are pressed
+
+### Navigation Structure
+```
+Home Screen
+├── Parameter View (Default)
+│   ├── CC Parameter Pages (3 knobs per page)
+│   ├── Channel Selection (1-16)
+│   └── Transport & Recording Controls
+├── Modulation View
+│   └── Advanced parameter modulation controls
+└── Overlay Menus (z-depth layered)
+    ├── Settings Menu
+    ├── File Browser
+    ├── Virtual Keyboard
+    └── Confirmation Dialogs
+```
+
+### Spatial Control System
+The encoder spatial mapping remains consistent across all UI contexts (browser, settings, parameter control) for intuitive hardware interaction.
+
+## Audio & Video Input
+
+- **Audio Reactive**: Built-in microphone creates visuals that respond to sound with adjustable sensitivity
+- **Video Input**: Connect video sources via USB or capture devices for live video processing
 
 ## Modulation System
 
@@ -74,6 +148,35 @@ The built-in microphone can modulate parameters with adjustable:
 - **Magnitude**: Sensitivity to audio input (bipolar -1 to +1)  
 - **Slew Rate**: Smoothness of audio response (0 to 1)
 
+## Settings Menu
+
+Access the settings menu through the gear icon in the main interface. The settings are organized into system controls and network connectivity options.
+
+### System Controls
+- **System Information**: View current firmware version, hardware details, and system statistics
+- **Go to Desktop**: Switch to Raspberry Pi desktop mode for system administration
+- **Screen Brightness**: Adjust display brightness with + and - buttons for optimal viewing
+- **Fan Control**: Enable or disable the cooling fan (useful for silent operation)
+- **Factory Content**: Download official content packs and resources
+
+### Network & Connectivity
+
+#### Wi-Fi Management
+- **Wi-Fi Enable/Disable**: Toggle wireless connectivity
+- **Network Selection**: Browse and connect to available wireless networks
+- **Signal Strength**: Visual indicators show connection quality
+- **Connection Status**: Real-time status of network connectivity
+
+#### Bluetooth Control
+- **Bluetooth Enable/Disable**: Toggle Bluetooth functionality for wireless devices
+- **Device Pairing**: Connect Bluetooth MIDI controllers and other devices
+- **Connection Management**: Manage paired devices and connection status
+
+### Performance Settings
+- **Render Scaling**: Automatic performance optimization based on system load
+- **Memory Management**: Efficient resource cleanup and caching
+- **Background Tasks**: Monitor system processes and resource usage
+
 ## Supported File Formats
 
 ### Images
@@ -81,6 +184,40 @@ The built-in microphone can modulate parameters with adjustable:
 - **Vector Graphics**: SVG (Scalable Vector Graphics)
 
 SVG files provide crisp, scalable graphics that maintain quality at any resolution. The Hypno 2 automatically renders SVG files at optimal quality when loaded into channels, ensuring sharp, pixelation-free visuals perfect for logos, icons, and geometric patterns that can scale from small UI elements to full-screen visuals.
+
+### Video Files
+- **Primary Format**: MP4 (H.264 encoding recommended)
+- **Image Sequences**: Uncompressed directories for high-quality processing
+
+### Other Formats
+- **Shaders**: `.frag` fragment shader files for custom visual effects
+- **Presets**: `.json` complete system state files for performance recall
+
+## MIDI Control
+
+Hypno 2 features comprehensive MIDI support for external control, enabling wireless performance setups and integration with existing MIDI workflows.
+
+### Connection Types
+
+#### USB MIDI Controllers
+1. **Plug-and-Play**: Connect USB MIDI controller to Hypno 2
+2. **Automatic Detection**: System automatically detects connected devices
+3. **Multiple Devices**: Support for simultaneous MIDI controllers
+
+#### Bluetooth MIDI Controllers
+1. **Enable Bluetooth**: Access Settings → Bluetooth Control → Enable
+2. **Pairing Mode**: Put MIDI controller in pairing mode
+3. **Device Selection**: Select controller from Bluetooth device list in settings
+4. **Wireless Control**: Enjoy untethered performance control
+
+### Supported MIDI Messages
+- **Control Change (CC)**: Continuous parameter control for knobs and sliders
+- **Note Messages**: Trigger-based control for preset save/recall
+- **Multiple Channels**: Each MIDI channel represents a Channel of video or the Mixer on CH 1
+
+### MIDI Features
+- **Preset Integration**: MIDI mappings are saved with presets
+- **Wireless Performance**: Bluetooth MIDI enables cable-free setups
 
 ## File Management
 
@@ -90,15 +227,38 @@ Hypno 2 features an intuitive file browser with advanced selection and managemen
 
 The file browser provides a clean, touch-friendly interface for navigating and managing your files:
 
-- **Always-Visible Checkboxes**: Every file and folder displays a checkbox for immediate selection
+- **Checkboxes**: Every file and folder displays a checkbox for multi-selection
 - **Master Checkbox**: Located in the browser header, provides quick select all/none functionality
-- **Visual Feedback**: Selected files show checked boxes (✓), unselected files show empty boxes (☐)
+- **Visual Feedback**: Selected files show checked boxes (X), unselected files show empty boxes (☐)
 - **Selection Counter**: Header displays the current number of selected files
 - **Spatial Navigation**: Use the three hardware encoders to navigate - left encoder for leftmost elements, center for middle elements, right encoder for rightmost elements
+- **File Renaming**: Touch filename to rename using the virtual keyboard system
+
+### Virtual Keyboard System
+
+Hypno 2 includes a comprehensive virtual keyboard for text input and file management:
+
+#### Keyboard Features
+- **Full QWERTY Layout**: Complete keyboard with number row, letters, and special characters
+- **Shift/Caps Support**: Visual feedback for shift and caps lock states
+- **Text Cursor**: Visual cursor indicator ("|") shows insertion point
+- **Cursor Navigation**: Left and right arrow keys for precise text positioning
+
+#### Encoder Integration
+- **Encoder Control**: Use hardware encoders for precise cursor positioning
+- **Clockwise Rotation**: Move cursor to the right
+- **Counter-clockwise Rotation**: Move cursor to the left
+- **Touch Positioning**: Touch text field directly to position cursor
+
+#### Text Editing
+- **Insert Mode**: Type at cursor position for precise text editing
+- **Backspace**: Delete characters to the left of cursor
+- **Confirmation**: Press GO button to confirm input and close keyboard
+- **Cancel**: Press NO button to cancel input and return to previous screen
 
 ### Multiple File Selection
 
-The always-visible checkbox system makes selecting multiple files intuitive and efficient:
+The checkbox system makes selecting multiple files intuitive and efficient:
 
 #### Basic Selection
 1. **Select Individual Files**: Touch the checkbox next to any file to toggle its selection
@@ -115,60 +275,15 @@ The always-visible checkbox system makes selecting multiple files intuitive and 
 
 When working with video files, Hypno 2 offers flexible encoding options with real-time progress tracking:
 
-#### Quality Presets
-- **High Quality**: Maximum quality encoding (CRF 1, slow preset)
-  - Best for archival purposes and professional workflows
-  - Larger file sizes but pristine quality
-  - Suitable for final output and preservation
+Select files with checkboxes, choose quality preset, and monitor real-time progress bars with frame counts.
 
-- **Compatible**: Standard quality encoding (CRF 23, medium preset)  
-  - Optimized for sharing and general playback
-  - Balanced file size and quality
-  - Suitable for streaming and distribution
-  - Works with Android
+### USB Drive Management & File Operations
 
-#### Encoding Process
-1. **Select Video Files**: Use checkboxes to select one or more video files
-2. **Choose Quality**: Select your preferred quality preset from the encoding menu
-3. **Monitor Progress**: Real-time progress bars show encoding status with frame counts
-4. **Batch Processing**: Multiple files can be encoded simultaneously with individual progress tracking
+USB drives are automatically mounted when connected, with support for multiple partitions and safe removal. The checkbox selection system enables batch operations:
 
-### USB Drive Management
-
-Hypno 2 automatically detects and manages USB storage devices for seamless file transfer:
-
-#### Automatic Detection
-- **Plug-and-Play**: USB drives are automatically mounted when connected
-- **Multiple Partitions**: Each partition on a drive appears as a separate accessible folder
-- **Drive Icons**: Visual indicators in the file browser show up to 3 connected drives
-- **Capacity Display**: Drive information includes available space and total capacity
-
-#### Safe Operations
-- **Safe Removal**: Drives are properly unmounted when disconnected to prevent data corruption
-- **Error Handling**: Graceful handling of drive disconnection during file operations
-- **Stale Cleanup**: Automatic cleanup of mount points from previously disconnected drives
-
-#### File Transfer
-- Use the checkbox selection system to prepare files for transfer
-- **Batch Operations**: Transfer multiple files simultaneously with progress tracking
-- **Directory Support**: Full support for copying folders and maintaining directory structure
-
-### File Operations
-
-The checkbox selection system enables efficient batch operations:
-
-#### Available Operations
-- **Move Files**: Relocate selected files to different directories
-- **Copy Files**: Duplicate selected files to new locations  
-- **Delete Files**: Remove selected files with confirmation prompts
-- **Encode Videos**: Batch encode multiple video files with chosen quality settings
-- **Decode Videos**: Batch decode multiple video files to prepare for sampling
-
-#### Operation Feedback
-- **Progress Indicators**: Real-time progress bars for long-running operations
-- **Cancellation**: Ability to cancel operations in progress
-- **Error Reporting**: Clear feedback when operations encounter issues
-- **Completion Status**: Visual confirmation when operations complete successfully
+**Available Operations**: Move, copy, delete, encode/decode videos  
+**Progress Tracking**: Real-time progress bars with cancellation support  
+**Safety Features**: Proper drive unmounting and error handling
 
 {% hint style="tip" %}
 **Pro Tip**: Use the master checkbox to quickly select all files in a directory, then deselect individual files you don't want to include in batch operations.
@@ -178,13 +293,32 @@ The checkbox selection system enables efficient batch operations:
 **Important**: Always wait for file operations to complete before disconnecting USB drives to prevent data loss.
 {% endhint %}
 
-## Overview
+## Recording & Export
 
-Hypno 2 is a hardware video synthesizer with advanced signal processing capabilities.
+Hypno 2 features comprehensive recording capabilities for capturing your visual performances with high quality and proper timing.
 
-## Controls and Interface
+### Video Recording System
 
-### Mod Menu
+#### Recording Features
+- **High Quality Recording**: Full resolution and frame rate capture
+- **Progress Tracking**: Visual progress bars show encoding status with frame counts
+- **Automatic Naming**: Files automatically named with timestamp for organization
+
+#### Recording Workflow
+1. **Setup Visual**: Configure your layers, effects, and parameters as desired
+2. **Start Recording**: Press the record button (turns red when active)
+3. **Perform**: Play your visual performance - recording runs in background
+4. **Stop Recording**: Press record button again to finish recording
+5. **Processing**: Monitor real-time progress bars during frame processing
+6. **Assignment Option**: Choose to assign completed recording to active channel
+7. **File Access**: Find recordings in Resources/Recordings/ directory
+
+#### Batch Processing
+- **Multiple Files**: Encode multiple recordings simultaneously
+- **Individual Progress**: Each encoding job shows separate progress tracking
+- **Queue Management**: Background processing allows continued use during encoding
+
+## Mod Menu
 
 The mod menu displays real-time information about modulation sources and inputs:
 
