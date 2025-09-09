@@ -19,6 +19,7 @@ Hypno 2 is a hardware video synthesizer with 3 knobs, 3 buttons, CV inputs and b
 
 Hypno 2 has two different control modes depending on whether you're using the main video synthesizer application or desktop mode.
 
+
 ### Hardware Overview
 - **3 Pushable Encoders**: Rotary encoders that can be turned and pressed
 - **3 Keyboard Buttons**: Dedicated buttons for navigation and channel selection
