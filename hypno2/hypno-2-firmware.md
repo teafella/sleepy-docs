@@ -5,27 +5,23 @@ description: Firmware updates and installation for Hypno 2
 # Hypno 2 Firmware
 
 {% hint style="info" %}
-Keep your Hypno 2 updated with the latest firmware for new features and improvements.
+By downloading these images you agree not to decompile our code or use the provided software in a way that may be harmful to Sleepy Circuits, LLC or humanity as a whole.
 {% endhint %}
 
-## Current Version
+## Version Patch Notes
 
-**Latest Firmware**: Version will be announced when available
+Version Notes will be announced when Available
 
 ## How to Update
 
-
-4. Navigate to System > The Firmware version will turn intoa  button when a new version is available.
-5. Confirm update and make sure your device won't be unplugged during the process.
-6. Wait for update to complete and engine to restart, you will see some scrolling text, this is normal.
+1. Connect to Internet via WiFi or Ethernet
+2. Tap the System Settings Gear > The Firmware version will turn into a button when a new version is available.
+3. Make sure your device won't be unplugged during the process and confirm update.
+4. Wait for update to complete and engine to restart, you will see some scrolling text, this is normal.
 
 {% hint style="warning" %}
 Do not power off the device during firmware update.
 {% endhint %}
-
-## Firmware History
-See github releases for release details.
-Updates and changelog will be posted here as new versions are released.
 
 ## Backup Your Settings
 
@@ -33,4 +29,4 @@ Your filesystem will be preserved, but you should still make a habit of backing 
 
 {% hint style="success" %}
 Having issues? See the [Troubleshooting Guide](hypno-2-troubleshooting.md)
-{% endhint %} 
+{% endhint %}
