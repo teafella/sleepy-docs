@@ -2,7 +2,11 @@
 description: Directions for updating Hypno.
 ---
 
-# Hypno Firmware
+# Hypno 1 Firmware
+
+{% hint style="info" %}
+By downloading these images you agree not to decompile or reverse engineer our products or use them in a way that may be harmful to Sleepy Circuits, LLC or humanity as a whole.
+{% endhint %}
 
 {% embed url="https://youtu.be/YvDNsAs5yWQ" %}
 
