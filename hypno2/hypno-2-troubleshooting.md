@@ -104,13 +104,8 @@ Step-by-step solutions for common issues with Hypno 2.
 ### Recording Problems
 
 1. **Recording Won't Start**: Check available disk space
-2. **Poor Recording Quality**: Verify quality settings, check system performance
-3. **Recording Stutters**: Reduce visual complexity during recording
-4. **Can't Find Recordings**: Check Resources/Recordings/ directory
-
-## Factory Reset
-
-None yet.
+2. **Recording Stutters**: Reduce visual complexity/sampled file sizes during recording
+3. **Can't Find Recordings**: Check Resources/Recordings/ directory
 
 ## Getting Help
 
@@ -118,7 +113,7 @@ If these steps don't solve your issue:
 
 1. Check the [FAQ](hypno-2-faq.md)
 2. Visit the forum.sleepycircuits.com
-3. Open a support ticket @ support@sleepycircuits.com
+3. Open a support ticket w/ support@sleepycircuits.com
 
 {% hint style="success" %}
 Include your firmware version and describe the exact issue when contacting support. Include video recordings of issue if possible.
