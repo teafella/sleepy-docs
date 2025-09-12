@@ -4,9 +4,9 @@ description: User manual for the Sleepy Circuits Hypno 2 Hardware Video Synthesi
 
 # Hypno 2 Manual
 
-{% hint style="info" %}
-Hypno 2 is a hardware video synthesizer with 3 knobs, 3 buttons, CV inputs and built-in microphone.
-{% endhint %}
+## PDF Manual
+
+[https://www.dropbox.com/scl/fi/k0b29ys0r7859dozfxymz/Hypno-2-Manual-Prerelease.pdf?rlkey=acmcev1g3rsh1pdbrkfjzm5u8\&dl=0](https://www.dropbox.com/scl/fi/k0b29ys0r7859dozfxymz/Hypno-2-Manual-Prerelease.pdf?rlkey=acmcev1g3rsh1pdbrkfjzm5u8\&dl=0)
 
 ## Quick Start
 
@@ -27,6 +27,8 @@ Hypno 2 has two different control modes depending on whether you're using the ma
 
 ### Main Application Mode (Video Synthesizer)
 
+**Channel Selection**: Use buttons to switch between channels
+
 #### Encoders
 
 * **Left Encoder (Encoder 0)**: Controls leftmost parameters and UI elements
@@ -34,18 +36,7 @@ Hypno 2 has two different control modes depending on whether you're using the ma
 * **Right Encoder (Encoder 2)**: Controls rightmost parameters and UI elements
 * **Spatial Mapping**: Each encoder corresponds to its physical position on screen
 
-#### Buttons (Main App)
 
-* **Button 0 (Left)**: Channel and navigation functions
-* **Button 1 (Center)**: Channel and navigation functions
-* **Button 2 (Right)**: Channel and navigation functions
-* **Button Combinations**: Simultaneous button presses for special functions
-
-#### Channel System
-
-* **16 Total Channels**: Channels 1-15 for video synthesis, Channel 16 for master effects
-* **Channel Selection**: Use buttons to switch between channels
-* **Parameter Pages**: Each channel has multiple pages of 3 parameters each
 
 ### Desktop Mode (Raspberry Pi Desktop)
 
@@ -94,27 +85,6 @@ Hypno 2 features a sophisticated touch-optimized interface designed for 800×480
 * **Blue indicators**: Selected or active elements
 * **Color inversion**: Visual feedback when buttons are pressed
 
-### Navigation Structure
-
-```
-Home Screen
-├── Parameter View (Default)
-│   ├── CC Parameter Pages (3 knobs per page)
-│   ├── Channel Selection (1-16)
-│   └── Transport & Recording Controls
-├── Modulation View
-│   └── Advanced parameter modulation controls
-└── Overlay Menus (z-depth layered)
-    ├── Settings Menu
-    ├── File Browser
-    ├── Virtual Keyboard
-    └── Confirmation Dialogs
-```
-
-### Spatial Control System
-
-The encoder spatial mapping remains consistent across all UI contexts (browser, settings, parameter control) for intuitive hardware interaction.
-
 ## Audio & Video Input
 
 * **Audio Reactive**: Built-in microphone creates visuals that respond to sound with adjustable sensitivity
@@ -126,8 +96,8 @@ Hypno 2 features advanced parameter modulation capabilities that can animate you
 
 ### Modulation Sources
 
-* **DC Sources**: Static modulation values (DC\_1 through DC\_4)
-* **AC Sources**: Audio modulation inputs (AC\_1)
+* **DC Sources**: Static modulation values (CV 1 -4)
+* **AC Sources**: Audio modulation inputs (AUX)
 * **Audio Following**: Built-in microphone with adjustable magnitude and slew rate
 * **BPM Sync**: Sync to external clock sources
 
@@ -153,8 +123,7 @@ Hypno 2 features advanced parameter modulation capabilities that can animate you
 When BPM sync is enabled, modulation can lock to external clock sources:
 
 **Division Options**: 1/32, 1/16, 1/8, 1/4, 1/2, 1/1, 2x, 4x, 8x, 16x\
-**Sync Sources**: Two independent trigger inputs\
-**Phase Continuity**: Smooth transitions when changing divisions or BPM
+**Sync Sources**: Two independent trigger inputs
 
 ### Audio Following
 
@@ -187,14 +156,8 @@ Access the settings menu through the gear icon in the main interface. The settin
 #### Bluetooth Control
 
 * **Bluetooth Enable/Disable**: Toggle Bluetooth functionality for wireless devices
-* **Device Pairing**: Connect Bluetooth MIDI controllers and other devices
-* **Connection Management**: Manage paired devices and connection status
-
-### Performance Settings
-
-* **Render Scaling**: Automatic performance optimization based on system load
-* **Memory Management**: Efficient resource cleanup and caching
-* **Background Tasks**: Monitor system processes and resource usage
+* **Device Pairing**: Connect Mezzz and other devices
+* **Connection Management**: Manage connection status
 
 ## Supported File Formats
 
@@ -207,13 +170,12 @@ SVG files provide crisp, scalable graphics that maintain quality at any resoluti
 
 ### Video Files
 
-* **Primary Format**: MP4 (H.264 encoding recommended)
-* **Image Sequences**: Uncompressed directories for high-quality processing
+* MP4 (H.264 encoding)
 
 ### Other Formats
 
 * **Shaders**: `.frag` fragment shader files for custom visual effects
-* **Presets**: `.json` complete system state files for performance recall
+* **Presets**: `.json` complete system state files for patch recall
 
 ## MIDI Control
 
@@ -231,14 +193,13 @@ Hypno 2 features comprehensive MIDI support for external control, enabling wirel
 
 1. **Enable Bluetooth**: Access Settings → Bluetooth Control → Enable
 2. **Pairing Mode**: Put MIDI controller in pairing mode
-3. **Device Selection**: Select controller from Bluetooth device list in settings
-4. **Wireless Control**: Enjoy untethered performance control
+3. **Mezzz Connects Automatically** (more controllers very soon)
 
 ### Supported MIDI Messages
 
 * **Control Change (CC)**: Continuous parameter control for knobs and sliders
 * **Note Messages**: Trigger-based control for preset save/recall
-* **Multiple Channels**: Each MIDI channel represents a Channel of video or the Mixer on CH 1
+* **Channels are Channels -** Each MIDI channel represents a Channel of video or the Mixer on CH 1
 
 ### MIDI Features
 
