@@ -181,6 +181,14 @@ SVG files provide crisp, scalable graphics that maintain quality at any resoluti
 
 Hypno 2 features comprehensive MIDI support for external control, enabling wireless performance setups and integration with existing MIDI workflows.
 
+### Supported MIDI Messages
+
+* **Control Change (CC)**: Continuous parameter control for knobs and sliders
+* **Note Messages**: Trigger-based control for preset save/recall
+* **Channels are Channels -** Each MIDI channel represents a Channel of video or the Mixer on CH 1
+
+<table><thead><tr><th width="119.18658447265625">MIDI Channel</th><th width="133.708251953125">Title</th><th>CC Functions</th></tr></thead><tbody><tr><td>1</td><td>Main Out</td><td>cc1 - gain 1, cc2 - feedback etc...</td></tr><tr><td>2</td><td>Channel A</td><td>cc1 - X offset, cc2 - frequency etc...</td></tr><tr><td>3</td><td>Channel B</td><td>cc1 - X offset, cc2 - frequency etc...</td></tr></tbody></table>
+
 ### Connection Types
 
 #### USB MIDI Controllers
@@ -195,11 +203,7 @@ Hypno 2 features comprehensive MIDI support for external control, enabling wirel
 2. **Pairing Mode**: Put MIDI controller in pairing mode
 3. **Mezzz Connects Automatically** (more controllers very soon)
 
-### Supported MIDI Messages
-
-* **Control Change (CC)**: Continuous parameter control for knobs and sliders
-* **Note Messages**: Trigger-based control for preset save/recall
-* **Channels are Channels -** Each MIDI channel represents a Channel of video or the Mixer on CH 1
+###
 
 ### MIDI Features
 
