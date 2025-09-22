@@ -12,8 +12,8 @@ description: User manual for the Sleepy Circuits Hypno 2 Hardware Video Synthesi
 
 1. Connect the USB-C Power Input
 2. Use the 3 knobs to control parameters
-3. Press knobs for additional functions
-4. Use the 3 buttons for presets and navigation
+3. Use the 3 buttons for channel selection
+4. Tap the screen for explore options
 
 ## Controls
 
