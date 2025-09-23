@@ -4,9 +4,7 @@ description: User manual for the Sleepy Circuits Hypno 2 Hardware Video Synthesi
 
 # Hypno 2 Manual
 
-## PDF Manual
-
-[https://www.dropbox.com/scl/fi/k0b29ys0r7859dozfxymz/Hypno-2-Manual-Prerelease.pdf?rlkey=acmcev1g3rsh1pdbrkfjzm5u8\&dl=0](https://www.dropbox.com/scl/fi/k0b29ys0r7859dozfxymz/Hypno-2-Manual-Prerelease.pdf?rlkey=acmcev1g3rsh1pdbrkfjzm5u8\&dl=0)
+## [PDF Manual](https://www.dropbox.com/scl/fi/2q1u1xpes0ihx7dzi1gox/Hypno-2-Manual-V0.100.pdf?rlkey=opykf18y8yub81ve43etv26o0\&dl=1)
 
 ## Quick Start
 
