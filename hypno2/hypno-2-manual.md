@@ -271,6 +271,33 @@ When working with video files, Hypno 2 offers flexible encoding options with rea
 
 Select files with checkboxes, choose quality preset, and monitor real-time progress bars with frame counts.
 
+### Video Playback Modes
+
+Hypno 2 provides three distinct playback modes that control how video files loop and repeat within their loop boundaries:
+
+#### Loop Mode
+
+* **Behavior**: Video continuously loops, jumping back to the loop start point when reaching the loop end
+* **Use Case**: Standard playback for seamless repeating visuals
+* **Default**: This is the default playback mode for all video files
+
+#### One-Shot Mode
+
+* **Behavior**: Video plays through once from loop start to loop end, then stops on the final frame
+* **Use Case**: Trigger-based visuals, animation sequences that should play once
+* **Reset**: Changing playback modes or manually seeking resets one-shot playback
+
+#### Bounce Mode
+
+* **Behavior**: Video plays forward to the loop end, then reverses and plays backward to the loop start, continuously bouncing back and forth
+* **Use Case**: Creating smooth reversing effects, pendulum-like motion, natural-feeling loops
+* **Direction**: Automatically reverses direction at loop boundaries
+
+#### Changing Playback Modes
+
+* **Touch Interface**: Press the playback mode button to cycle through modes: Loop → One-Shot → Bounce → Loop
+* **Per-Track**: Each video channel has its own independent playback mode
+
 ### USB Drive Management & File Operations
 
 USB drives are automatically mounted when connected, with support for multiple partitions and safe removal. The checkbox selection system enables batch operations:
