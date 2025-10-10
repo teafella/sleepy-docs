@@ -1,0 +1,23 @@
+name: GitBook Documentation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # This is a placeholder job that prevents GitHub from auto-running Jekyll
+  # GitBook is hosted directly from gitbook.com and syncs with GitHub
+  skip-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: GitBook Notice
+        run: |
+          echo "This repository uses GitBook for documentation."
+          echo "Documentation is automatically synced and built on gitbook.com"
+          echo "No build process needed in GitHub Actions."
+
