@@ -130,6 +130,28 @@ The built-in microphone can modulate parameters with adjustable:
 * **Magnitude**: Sensitivity to audio input (bipolar -1 to +1)
 * **Slew Rate**: Smoothness of audio response (0 to 1)
 
+## Undo/Redo System
+
+Hypno 2 includes a comprehensive undo/redo system that allows you to revert mistakes, explore different creative directions, and recover from unwanted changes.
+
+### Accessing Undo/Redo
+
+* **Undo Button** (↶): Reverts the last action - appears bright when available, dimmed when unavailable
+* **Redo Button** (↷): Re-applies an undone action - appears bright when available, dimmed when unavailable
+
+Simply tap the touchscreen button to undo or redo your most recent action.
+
+### What Can Be Undone
+
+The system tracks up to 100 actions including:
+
+* **Parameter Changes**: Knob adjustments via hardware encoders or MIDI
+* **Modulation Settings**: Changes to modulation phase, amplitude, and wave shape
+* **Preset Loads**: Switch back to previous presets with full state restoration
+* **Shader Changes**: Revert shader selections (both regular and FX shaders)
+* **Resource Switches**: Undo video/image file assignments made via file browser or arrow navigation
+* **Playback Mode Changes**: Revert Loop/One-Shot/Bounce mode changes
+
 ## Settings Menu
 
 Access the settings menu through the gear icon in the main interface. The settings are organized into system controls and network connectivity options.
