@@ -34,29 +34,7 @@ Hypno 2 has two different control modes depending on whether you're using the ma
 * **Right Encoder (Encoder 2)**: Controls rightmost parameters and UI elements
 * **Spatial Mapping**: Each encoder corresponds to its physical position on screen
 
-
-
-### Desktop Mode (Raspberry Pi Desktop)
-
-When you switch to desktop mode (accessible via Settings → "Go to Desktop"), the hardware controls emulate standard computer input:
-
-#### Encoders (Desktop Mode)
-
-* **Left Encoder**: Mouse X movement
-* **Center Encoder**: Mouse scroll wheel
-* **Right Encoder**: Mouse Y movement
-
-#### Buttons (Desktop Mode)
-
-* **Button 0**: ESC key
-* **Button 1**: SPACE key
-* **Button 2**: ENTER key
-* **Button 3**: Right mouse click
-* **Button 4**: Middle mouse click
-* **Button 5**: Left mouse click
-* **Button 0 + Button 2**: F11 key (fullscreen toggle)
-
-This allows you to navigate the Raspberry Pi desktop environment using the hardware controls.
+###
 
 ## Interface Navigation
 
@@ -83,10 +61,9 @@ Hypno 2 features a sophisticated touch-optimized interface designed for 800×480
 * **Blue indicators**: Selected or active elements
 * **Color inversion**: Visual feedback when buttons are pressed
 
-## Audio & Video Input
+## Video Input
 
-* **Audio Reactive**: Built-in microphone creates visuals that respond to sound with adjustable sensitivity
-* **Video Input**: Connect video sources via USB or capture devices for live video processing
+Connect UVC video sources via USB for live video processing, a small video camera icon will pop up in the file browser to help you load the camera.
 
 ## Modulation System
 
@@ -207,9 +184,7 @@ Hypno 2 features comprehensive MIDI support for external control, enabling wirel
 * **Note Messages**: Trigger-based control for preset save/recall
 * **Channels are Channels -** Each MIDI channel represents a Channel of video or the Mixer on CH 1
 
-<table><thead><tr><th width="119.18658447265625">MIDI Channel</th><th width="133.708251953125">Title</th><th>CC Functions</th></tr></thead><tbody><tr><td>1</td><td>Main Out</td><td>cc1 - gain 1, cc2 - feedback etc...</td></tr><tr><td>2</td><td>Channel A</td><td>cc1 - X offset, cc2 - frequency etc...</td></tr><tr><td>3</td><td>Channel B</td><td>cc1 - X offset, cc2 - frequency etc...</td></tr></tbody></table>
-
-### Connection Types
+<table><thead><tr><th width="119.18658447265625">MIDI Channel</th><th width="133.708251953125">Title</th><th>CC Functions</th></tr></thead><tbody><tr><td>16</td><td>Main Out</td><td>cc1 - gain 1, cc2 - feedback etc...</td></tr><tr><td>1</td><td>Channel A</td><td>cc1 - X offset, cc2 - frequency etc...</td></tr><tr><td>2</td><td>Channel B</td><td>cc1 - X offset, cc2 - frequency etc...</td></tr></tbody></table>
 
 #### USB MIDI Controllers
 
@@ -221,14 +196,12 @@ Hypno 2 features comprehensive MIDI support for external control, enabling wirel
 
 1. **Enable Bluetooth**: Access Settings → Bluetooth Control → Enable
 2. **Pairing Mode**: Put MIDI controller in pairing mode
-3. **Mezzz Connects Automatically** (more controllers very soon)
+3. Devices with MIDI characteristic trigger a popup requseting connection
 
-###
-
-### MIDI Features
+### MIDI Notes
 
 * **Preset Integration**: MIDI mappings are saved with presets
-* **Wireless Performance**: Bluetooth MIDI enables cable-free setups
+* Mapped presets are saved in the Presets folder under the corresponding note's folder, these can be moved manually to remap&#x20;
 
 ## File Management
 
@@ -241,7 +214,6 @@ The file browser provides a clean, touch-friendly interface for navigating and m
 * **Checkboxes**: Every file and folder displays a checkbox for multi-selection
 * **Master Checkbox**: Located in the browser header, provides quick select all/none functionality
 * **Visual Feedback**: Selected files show checked boxes (X), unselected files show empty boxes (☐)
-* **Selection Counter**: Header displays the current number of selected files
 * **Spatial Navigation**: Use the three hardware encoders to navigate - left encoder for leftmost elements, center for middle elements, right encoder for rightmost elements
 * **File Renaming**: Touch filename to rename using the virtual keyboard system
 
@@ -279,13 +251,6 @@ The checkbox system makes selecting multiple files intuitive and efficient:
 1. **Select Individual Files**: Touch the checkbox next to any file to toggle its selection
 2. **Select All Files**: Touch the master checkbox in the browser header to select all visible files
 3. **Clear All Selections**: Touch the master checkbox again when files are selected to clear all selections
-4. **Mixed Selection Indicator**: The master checkbox shows a partial state (◐) when some but not all files are selected
-
-#### Selection Persistence
-
-* **Directory Navigation**: Selected files remain selected when navigating between folders
-* **Automatic Cleanup**: Selection state is automatically cleared when changing directories to maintain clean state
-* **Memory Safety**: Selection system uses thread-safe operations for reliable performance
 
 ### Video Encoding
 
@@ -299,21 +264,15 @@ Hypno 2 provides three distinct playback modes that control how video files loop
 
 #### Loop Mode
 
-* **Behavior**: Video continuously loops, jumping back to the loop start point when reaching the loop end
-* **Use Case**: Standard playback for seamless repeating visuals
-* **Default**: This is the default playback mode for all video files
+* Video continuously loops, jumping back to the loop start point when reaching the loop end
 
 #### One-Shot Mode
 
-* **Behavior**: Video plays through once from loop start to loop end, then stops on the final frame
-* **Use Case**: Trigger-based visuals, animation sequences that should play once
-* **Reset**: Changing playback modes or manually seeking resets one-shot playback
+* Video plays through once from loop start to loop end, then stops on the final frame
 
 #### Bounce Mode
 
-* **Behavior**: Video plays forward to the loop end, then reverses and plays backward to the loop start, continuously bouncing back and forth
-* **Use Case**: Creating smooth reversing effects, pendulum-like motion, natural-feeling loops
-* **Direction**: Automatically reverses direction at loop boundaries
+* &#x20;Video plays forward to the loop end, then reverses and plays backward to the loop start, continuously bouncing back and forth
 
 #### Changing Playback Modes
 
@@ -338,14 +297,13 @@ USB drives are automatically mounted when connected, with support for multiple p
 
 ## Recording & Export
 
-Hypno 2 features comprehensive recording capabilities for capturing your visual performances with high quality and proper timing.
+Hypno 2 features comprehensive recording capabilities for capturing your visual performances.
 
 ### Video Recording System
 
 #### Recording Features
 
 * **High Quality Recording**: Full resolution and frame rate capture
-* **Progress Tracking**: Visual progress bars show encoding status with frame counts
 * **Automatic Naming**: Files automatically named with timestamp for organization
 
 #### Recording Workflow
@@ -355,8 +313,8 @@ Hypno 2 features comprehensive recording capabilities for capturing your visual 
 3. **Perform**: Play your visual performance - recording runs in background
 4. **Stop Recording**: Press record button again to finish recording
 5. **Processing**: Monitor real-time progress bars during frame processing
-6. **Assignment Option**: Choose to assign completed recording to active channel
-7. **File Access**: Find recordings in Resources/Recordings/ directory
+6. **Assignment Option**: Choose to assign completed recording to active channel (for quick resampling)
+7. **File Access**: Find recordings in VIDOS-Resources/Recordings/ directory
 
 #### Batch Processing
 
@@ -373,6 +331,30 @@ The mod menu displays real-time information about modulation sources and inputs:
 * **Trigger Interval BPM**: Shows beats per minute readings for each trigger input @ 64ppqn
 
 The trigger interval BPM display converts the frequency of incoming trigger signals into beats per minute, useful for syncing visual content to musical tempo. Each trigger input shows its own BPM readout with a clock icon, positioned vertically along the right edge of the screen for easy visibility.
+
+***
+
+### Desktop Mode (Raspberry Pi Desktop)
+
+When you switch to desktop mode (accessible via Settings → "Go to Desktop"), the hardware controls emulate standard computer input:
+
+#### Encoders (Desktop Mode)
+
+* **Left Encoder**: Mouse X movement
+* **Center Encoder**: Mouse scroll wheel
+* **Right Encoder**: Mouse Y movement
+
+#### Buttons (Desktop Mode)
+
+* **Button 0**: ESC key
+* **Button 1**: SPACE key
+* **Button 2**: ENTER key
+* **Button 3**: Right mouse click
+* **Button 4**: Middle mouse click
+* **Button 5**: Left mouse click
+* **Button 0 + Button 2**: F11 key (fullscreen toggle)
+
+This allows you to navigate the Raspberry Pi desktop environment using the hardware controls.
 
 {% hint style="success" %}
 Need help? Check the [FAQ](hypno-2-faq.md) or [Troubleshooting Guide](hypno-2-troubleshooting.md)
