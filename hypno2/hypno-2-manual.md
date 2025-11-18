@@ -316,11 +316,11 @@ Hypno 2 features comprehensive recording capabilities for capturing your visual 
 6. **Assignment Option**: Choose to assign completed recording to active channel (for quick resampling)
 7. **File Access**: Find recordings in VIDOS-Resources/Recordings/ directory
 
-#### Batch Processing
+#### Batch Processing (+Thought Manager)
 
-* **Multiple Files**: Encode multiple recordings simultaneously
-* **Individual Progress**: Each encoding job shows separate progress tracking
-* **Queue Management**: Background processing allows continued use during encoding
+* **Select Multiple Files**: Encode multiple recordings simultaneously
+* **Progress is tracked with glowing top bar + Thought Manager (Brain)**
+* Running new batches and single file operations is blocked while batch runs.
 
 ## Mod Menu
 
