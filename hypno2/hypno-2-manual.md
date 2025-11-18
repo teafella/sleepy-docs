@@ -346,15 +346,15 @@ When you switch to desktop mode (accessible via Settings → "Go to Desktop"), t
 
 #### Buttons (Desktop Mode)
 
-* **Button 0**: ESC key
-* **Button 1**: SPACE key
-* **Button 2**: ENTER key
-* **Button 3**: Right mouse click
-* **Button 4**: Middle mouse click
-* **Button 5**: Left mouse click
-* **Button 0 + Button 2**: F11 key (fullscreen toggle)
+* **Left Button**: ESC key
+* **Center Button**: SPACE key
+* **Right Button**: ENTER key
+* Left Encoder Tap: Right mouse click
+* Center Encoder Tap: Middle mouse click
+* Right Encoder Tap: Left mouse click
+* **L + R Button**: F11 key (fullscreen toggle)
 
-This allows you to navigate the Raspberry Pi desktop environment using the hardware controls.
+This allows you to easily navigate the Raspberry Pi desktop environment without requiring any external peripherals.
 
 {% hint style="success" %}
 Need help? Check the [FAQ](hypno-2-faq.md) or [Troubleshooting Guide](hypno-2-troubleshooting.md)
