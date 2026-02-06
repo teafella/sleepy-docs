@@ -60,7 +60,7 @@ The undo/redo system tracks up to 100 actions including parameter changes (hardw
 
 ### Recording
 
-Recording captures visuals at full resolution and frame rate with automatic timestamp-based naming. Press the record button (turns red when active) to start, perform your visual sequence, then press again to stop. After completion, choose whether to assign the recording to the active channel for immediate resampling. Recordings save to VIDOS-Resources/Recordings/. Multiple recordings can encode simultaneously — the glowing top bar and Thought Manager (Brain icon) track batch operation progress.
+Recording captures visuals at internal display resolution and frame rate with automatic timestamp-based naming. Press the record button (turns red when active) to start, perform your visual sequence, then press again to stop. After completion, choose whether to assign the recording to the active channel for immediate resampling. Recordings save to VIDOS-Resources/Recordings/. Multiple recordings can encode simultaneously — the glowing top bar and Thought Manager (Brain icon) track batch operation progress.
 
 ### Presets
 
@@ -373,7 +373,7 @@ Access settings through the gear icon on the home screen. The settings menu is o
 ### System
 
 System information and general device settings.
-- **Top bar**: firmware version (v0.0.163), current date/time, storage usage (e.g. 436/1876GB). The version becomes an update button when new firmware is available.
+- **Top bar**: firmware version (v0.0.163), current date/time, storage usage (e.g. 436/1876GB). The version num becomes an update button when new firmware is available.
 - **Tab list** (left column): System (selected, highlighted blue), Video, Audio, Network, Bluetooth, MIDI, Storage
 - **System Info**: view detailed hardware and software information
 - **View Logs**: open the system log file for debugging
