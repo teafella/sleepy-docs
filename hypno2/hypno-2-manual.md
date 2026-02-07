@@ -60,7 +60,7 @@ The undo/redo system tracks up to 100 actions including parameter changes (hardw
 
 ### Recording
 
-Recording captures visuals at internal display resolution and frame rate with automatic timestamp-based naming. Press the record button (turns red when active) to start, perform your visual sequence, then press again to stop. After completion, choose whether to assign the recording to the active channel for immediate resampling. Recordings save to VIDOS-Resources/Recordings/. Multiple recordings can encode simultaneously — the glowing top bar and Thought Manager (Brain icon) track batch operation progress.
+Recording captures visuals at internal display resolution and frame rate with automatic timestamp-based naming. Press the record button (turns red when active) to start, perform your visual sequence, then press again to stop. After completion, choose whether to assign the recording to the active channel for immediate resampling. Recordings save to VIDOS-Resources/Recordings/. Multiple recordings can encode simultaneously — the glowing top bar tracks batch operation progress.
 
 ### Presets
 
