@@ -10,6 +10,10 @@ Try the search in the top right! It slaps.
 Mobile Users: Tap the three stacked lines on the top left to see a tree of all Sleepy Docs &#x20;
 {% endhint %}
 
+{% content-ref url="hypno2/hypno-2-manual.md" %}
+[hypno-2-manual.md](hypno2/hypno-2-manual.md)
+{% endcontent-ref %}
+
 <figure><img src=".gitbook/assets/Mezzz Header Horizontal_Mezzz Header Horizontal_Mezzz Header Horizontal.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 {% content-ref url="mezzz-and-vidos/mezzz-manual.md" %}
