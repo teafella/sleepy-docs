@@ -1,6 +1,10 @@
 # Mezzz Firmware (& vidOS Patch Notes)
 
-## Patch Notes
+## Patch Notes&#x20;
+
+### [Mezzz 2.0 Firmware](https://www.dropbox.com/scl/fi/4o7duccjhizdo61hq1i1y/MezzzFirmwareV2.0.bin?rlkey=x2hz663ahn9soas8g94gihe9v\&dl=1) **(vidOS 1.4 on** [**App Store**](https://apps.apple.com/us/app/sleepy-vidos/id6448588001)**)**
+
+* Hypno 2 sync messages (echos on midi channel switch to show correct maps)
 
 ### [**Mezzz 1.4 Firmware**](https://www.dropbox.com/scl/fi/0ubw7e56moreqmara33qi/MezzzFirmwareV1.4.bin?rlkey=gm6lbzkk5lx2a80hxdsq6rtml\&dl=1) **(vidOS 1.4 on** [**App Store**](https://apps.apple.com/us/app/sleepy-vidos/id6448588001)**)**
 
