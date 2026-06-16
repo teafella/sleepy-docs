@@ -28,7 +28,7 @@ Each encoder corresponds spatially to its screen position: the left encoder (Enc
 
 The interface uses consistent visual language: black backgrounds indicate touchable buttons, white backgrounds mark non-interactive labels, blue highlights show selected or active elements, and color inversion provides visual feedback when buttons are pressed.
 
-### Resettings Encoders
+### Resetting Encoders
 - Tap an encoder to reset it to its default value
 - encoder values can sometimes be negative so make sure to try that if it doesnt seem to be working! (Midi offsets can be made with cc badge in mod menu if need be)
 
@@ -60,7 +60,7 @@ The undo/redo system tracks up to 100 actions including parameter changes (hardw
 
 ### Recording
 
-Recording captures visuals at internal display resolution and frame rate with automatic timestamp-based naming. Press the record button (turns red when active) to start, perform your visual sequence, then press again to stop. After completion, choose whether to assign the recording to the active channel for immediate resampling. Recordings save to VIDOS-Resources/Recordings/. Multiple recordings can encode simultaneously — the glowing top bar and Thought Manager (Brain icon) track batch operation progress.
+Recording captures visuals at internal display resolution and frame rate with automatic timestamp-based naming. Press the record button (turns red when active) to start, perform your visual sequence, then press again to stop. After completion, choose whether to assign the recording to the active channel for immediate resampling. Recordings save to VIDOS-Resources/Recordings/. Multiple recordings can encode simultaneously — the glowing top bar tracks batch operation progress.
 
 ### Presets
 
@@ -475,7 +475,7 @@ Built-in GLSL fragment shader editor for creating and modifying custom visual ef
 ## Keyboard
 
 On-screen keyboard for text input (search queries, file renaming, Wi-Fi passwords, folder names).
-- **Header** (green bar): shows the current input mode — "Search Resources" in this screenshot
+- **Header** (green bar): shows the current input mode — "Search Resources" etc.
 - **NO** button (top-left): cancel the input and close the keyboard
 - **GO** button (top-right): confirm the input and submit
 - **QWERTY layout**: three rows of letter keys (q-p, a-l, z-m)

@@ -15,44 +15,67 @@ Step-by-step solutions for common issues with Hypno 2.
 1. Check HDMI cable connection
 2. Try a different HDMI cable
 3. Test with another display
+4. Verify display supports 1080p resolution
 
 ### Display Flickering
 
 1. Try a shorter HDMI cable
 2. Check display resolution settings
 3. Test with a different display
+4. Avoid HDMI adapters when possible
+
+### External Display Not Detected
+
+1. A popup should appear when connecting a powered display
+2. Check that the display is powered on before connecting HDMI
+3. Try disconnecting and reconnecting the HDMI cable
 
 ## Power Issues
 
 ### Won't Turn On
 
-1. Ensure power adapter is the official Pi5 one
-2. Check power adapter connection
+1. Use the official Pi5 USB-C power adapter (required)
+2. Check power adapter connection at both ends
 3. Try a different power outlet
 4. Contact support if issue persists
 
 ### Random Shutdowns
 
-1. Check power adapter rating/model
-2. Ensure adequate ventilation
-3. Check for overheating
+1. Verify you're using the official Pi5 power adapter
+2. Ensure adequate ventilation around the device
+3. Enable fan control in Settings if device is overheating
+4. Check for overheating (device should not be hot to touch)
 
 ## Audio Issues
 
 ### No Audio Response
 
-1. Check microphone sensitivity settings
+1. Check microphone sensitivity settings in modulation menu
 2. Test in a louder environment
-3. Verify audio reactive mode is enabled and aux jack is unplugged
-4. Try external audio input if available
+3. Verify audio reactive mode is enabled
+4. Unplug AUX jack if using built-in microphone
+5. Try external audio input via AUX jack
+
+### No Audio Output
+
+1. Check audio device selection in Settings → Audio Tab
+2. Verify output volume is not muted
+3. For Bluetooth audio, ensure device is paired and connected
+4. Check that audio tracks have content assigned
+
+### Capture Card Audio Not Working
+
+1. Audio should auto-link to video from same capture card
+2. Check that capture card has audio input capability
+3. Verify audio source is providing signal to capture card
 
 ## Control Issues
 
 ### Encoders Not Responding
 
 1. Check if you're in the expected UI screen
-2. Verify encoder is controlling the correct UI element (spatial mapping)
-3. Try pressing encoder to reset the value
+2. Verify encoder is controlling the correct UI element (spatial mapping: left encoder = left elements, etc.)
+3. Press encoder to reset the value
 4. Restart the device if issue persists
 
 ### Touch Interface Issues
@@ -60,6 +83,7 @@ Step-by-step solutions for common issues with Hypno 2.
 1. **Unresponsive Touch**: Check if screen is clean and dry
 2. **Stuck in Fullscreen**: Touch anywhere on screen to return to controls
 3. **UI Elements Not Working**: Verify you're touching black (interactive) areas, not white (labels)
+4. **Buttons Not Responding**: Some operations block UI during processing (check for progress indicators)
 
 ## USB/File Issues
 
@@ -93,6 +117,12 @@ Step-by-step solutions for common issues with Hypno 2.
 3. **Connection Drops**: Check router stability, try different network
 4. **Wi-Fi Not Enabling**: Restart device, check for hardware issues
 
+### Update Issues
+
+1. **Update Won't Start**: Ensure at least 2 GB of free disk space, check internet connection
+2. **Update Failed**: Check available disk space, retry update after freeing space
+3. **Update Button Not Appearing**: Verify internet connection, check current firmware version
+
 ## Performance Issues
 
 ### Slow Performance
@@ -107,14 +137,88 @@ Step-by-step solutions for common issues with Hypno 2.
 2. **Recording Stutters**: Reduce visual complexity/sampled file sizes during recording
 3. **Can't Find Recordings**: Check Resources/Recordings/ directory
 
+## Video Input Issues
+
+### USB Camera Not Detected
+
+1. Verify camera is UVC-compatible (most modern USB cameras are)
+2. Try a different USB port
+3. Check if camera appears in file browser with camera icon
+4. Some cameras need powered USB hub
+
+### NDI Source Not Appearing
+
+1. Ensure Hypno 2 and NDI source are on the same network
+2. Check WiFi connection in Settings
+3. NDI discovery may take a few seconds
+4. Verify NDI source is actively broadcasting
+5. Some networks block multicast (NDI discovery protocol)
+
+### Capture Card Video Issues
+
+1. Verify capture card is UVC-compatible
+2. Check input source to capture card is providing signal
+3. Try different resolution settings on input source
+4. Some capture cards work better with certain USB ports
+
+## Shader Issues
+
+### Shader Won't Compile
+
+1. Check error messages displayed in the editor
+2. Common issues: missing semicolons, undefined variables
+3. Verify GLSL syntax is correct for fragment shaders
+4. Try reverting to a known working version (undo)
+
+### Shader Editor Problems
+
+1. **Can't See Code**: Check editor font in Settings → Global
+2. **Cursor Not Moving**: Use encoders or touch to position cursor
+3. **Changes Not Saving**: Press GO to confirm edits
+
+## Recording Issues
+
+### Recording Won't Start
+
+1. Check available disk space in Settings → Storage
+2. Ensure no other batch operation is running (check Brain icon)
+3. Wait for any pending operations to complete
+
+### Recording Quality Issues
+
+1. Reduce visual complexity during recording
+2. Use smaller/simpler source files
+3. Check storage write speed (USB drives may be slower)
+
+### Can't Find Recordings
+
+1. Recordings save to VIDOS-Resources/Recordings/
+2. Navigate to this folder in the file browser
+3. Files are named with timestamps
+
+## Batch Operation Issues
+
+### Operations Stuck or Frozen
+
+1. Check the Brain icon for progress status
+2. Wait for completion - some operations take time
+3. Batch operations can be cancelled via progress popup
+4. Don't disconnect USB drives during operations
+
+### Conflict Errors
+
+1. Files with same names exist at destination
+2. Either rename source files or clear destination
+3. System validates and reports conflicts before starting
+
 ## Getting Help
 
 If these steps don't solve your issue:
 
 1. Check the [FAQ](hypno-2-faq.md)
-2. Visit the forum.sleepycircuits.com
-3. Open a support ticket w/ support@sleepycircuits.com
+2. Visit forum.sleepycircuits.com
+3. Open a support ticket at support@sleepycircuits.com
 
 {% hint style="success" %}
-Include your firmware version and describe the exact issue when contacting support. Include video recordings of issue if possible.
+Include your firmware version and describe the exact issue when contacting support. Include video recordings of issues if possible.
 {% endhint %}

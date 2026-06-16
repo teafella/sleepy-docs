@@ -22,7 +22,6 @@
 * [Hypno 1 FAQ](hypno/hypno-faq.md)
 * [Hypno 1 Troubleshooting Guide](hypno/hypno-set-up-and-troubleshooting-manual.md)
 
-
 ## Accessories
 
 * [CME WIDI Bud Pro](accessories/cme-widi-bud-pro.md)

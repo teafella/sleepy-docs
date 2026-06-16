@@ -15,9 +15,10 @@ Version Notes will be announced when Available
 ## How to Update
 
 1. Connect to Internet via WiFi or Ethernet
-2. Tap the System Settings Gear > The Firmware version will turn into a button when a new version is available.
-3. Make sure your device won't be unplugged during the process and confirm update.
-4. Wait for update to complete and engine to restart, you will see some scrolling text, this is normal.
+2. Ensure at least 2 GB of free disk space is available (check in System Settings)
+3. Tap the System Settings Gear > The Firmware version will turn into a button when a new version is available.
+4. Make sure your device won't be unplugged during the process and confirm update.
+5. Wait for update to complete and engine to restart, you will see some scrolling text, this is normal.
 
 {% hint style="warning" %}
 Do not power off the device during firmware update.
