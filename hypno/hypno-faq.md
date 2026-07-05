@@ -64,7 +64,7 @@ Hypno has built in HDMI digital video output on the top or side of the unit, dep
 
 <summary>How do I record Hypno’s output?</summary>
 
-Hypno is capable of outputting three different video formats: HDMI (digital), composite (analog), and NDI (digital). We made a [video explaining](https://youtu.be/NDmuRfJRp7g?si=0HvoBbXP854ylhR3) one of the easiest ways to record Hypno with the free software [OBS](https://obsproject.com). Except for NDI, a capture device is required to stream Hypno’s video output into a computer. You can get started recording Hypno without additional hardware by using its NDI output over USB or Ethernet. Full NDI + OBS setup guides for Windows and Mac are in the [Setup & Troubleshooting Manual](hypno-set-up-and-troubleshooting-manual.md#4-ndi-output).
+Hypno is capable of outputting three different video formats: HDMI (digital), composite (analog), and NDI (digital). We made a [video explaining](https://youtu.be/NDmuRfJRp7g?si=0HvoBbXP854ylhR3) one of the easiest ways to record Hypno with the free software [OBS](https://obsproject.com). Except for NDI, a capture device is required to stream Hypno’s video output into a computer. You can get started recording Hypno without additional hardware by using its NDI output over USB or Ethernet. Full NDI + OBS setup guides for Windows and Mac are in the [Hypno Manual](hypno-manual.md#recording-hypno-w-video-inputs-in-obs).
 
 </details>
 
@@ -123,7 +123,7 @@ Questions about a specific LZX setup? Email support@sleepycircuits.com.
 
 First, please make sure to check out [this portion of the manual ](https://sleepycircuits.gitbook.io/sleepy-circuits/hypno/hypno-manual#uvc-video-input-cameras-and-capture-cards\\)all about this function. Make sure to follow the connection diagram found there precisely, following the order of connections. There are 2 types of inputs Hypno can recognize, USB MP4 files or UVC webcams. We have a [video guide about UVC video input here ](https://youtu.be/CurmVsxpubY?si=noGxk4L1tGrNFkUV) and [USB MP4 sampling here](https://youtu.be/x9mkvRHckG4?si=0iDuzpU4iQYYRKe-).
 
-We also keep a running [List of Compatible USB Accessories (Webcams/Capture Cards and MIDI devices)](hypno-set-up-and-troubleshooting-manual.md#compatible-usb-accessories) in the Setup & Troubleshooting Manual. So if youre not sure about your accessory make sure to check this out.
+We also keep a running [List of Compatible USB Accessories (Webcams/Capture Cards and MIDI devices)](hypno-manual.md#compatible-usb-accessories) in the Hypno Manual. So if youre not sure about your accessory make sure to check this out.
 
 </details>
 
@@ -143,7 +143,7 @@ Sleepy Circuits offers a number of [Videos Packs on our website](https://sleepyc
 
 <summary>How do I use Hypno’s NDI output?</summary>
 
-Hypno is capable of broadcasting its output as NDI video via its USB ports (or the Ethernet port on properly equipped Hypno Kit). Full NDI + OBS setup guides for Windows and Mac are in the [Setup & Troubleshooting Manual](hypno-set-up-and-troubleshooting-manual.md#4-ndi-output).
+Hypno is capable of broadcasting its output as NDI video via its USB ports (or the Ethernet port on properly equipped Hypno Kit). Full NDI + OBS setup guides for Windows and Mac are in the [Hypno Manual](hypno-manual.md#recording-hypno-w-video-inputs-in-obs).
 
 </details>
 
@@ -237,7 +237,7 @@ Here is our list of favorite LFOs and other modulators that open up a lot of int
 
 <summary>How do I control Hypno with MIDI?</summary>
 
-Hypno can accept MIDI control from class-compliant USB MIDI controllers and interfaces. Simply connect the MIDI device with a USB OTG cable ( you may need a microUSB adapter). The [online Hypno manual](hypno-manual.md) provides a table for the MIDI implementation and there’s a [short video tutorial](https://youtu.be/xghMVRDGoV8?si=4Jo2ODDqG_oWyKse) too. We’ve also released an informative [Hypno & OP-Z Tutorial ](https://www.youtube.com/watch?v=KxKJ7ShE5RI)which contains tons of useful tips for controlling Hypno with MIDI. MIDI devices we have tested are also documented in the [List of Compatible USB Accessories](hypno-set-up-and-troubleshooting-manual.md#compatible-usb-accessories) in the Setup & Troubleshooting Manual.
+Hypno can accept MIDI control from class-compliant USB MIDI controllers and interfaces. Simply connect the MIDI device with a USB OTG cable ( you may need a microUSB adapter). The [online Hypno manual](hypno-manual.md) provides a table for the MIDI implementation and there’s a [short video tutorial](https://youtu.be/xghMVRDGoV8?si=4Jo2ODDqG_oWyKse) too. We’ve also released an informative [Hypno & OP-Z Tutorial ](https://www.youtube.com/watch?v=KxKJ7ShE5RI)which contains tons of useful tips for controlling Hypno with MIDI. MIDI devices we have tested are also documented in the [List of Compatible USB Accessories](hypno-manual.md#compatible-usb-accessories) in the Hypno Manual.
 
 </details>
 

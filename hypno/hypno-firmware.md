@@ -30,7 +30,7 @@ By downloading these images you agree not to decompile our code or use the provi
 {% endhint %}
 
 {% hint style="info" %}
-**PAL/NTSC** Composite can be switched by the user, see [Hypno Manual](hypno-manual.md#setting-composite-video-output-to-pal-or-ntsc).
+**PAL/NTSC** Composite can be switched by the user, see [Hypno Manual](hypno-manual.md#setting-composite-out-to-pal-or-ntsc).
 {% endhint %}
 
 _Thanks for your patience with downloading these images._

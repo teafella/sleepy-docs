@@ -71,7 +71,7 @@ Plug an HDMI cable into your display (TV, monitor, projector, caputre card, etc.
 
 ## Midi **Chart/**&#x4D;ap (CH 16)
 
-Hypno can act as a USB-MIDI host through its front microUSB port (or rear USB-A ports on a completed Hypno Kit), allowing you to edit or animate the module’s parameters with MIDI controllers, keyboards and more. In some cases, a USB OTG (microUSB adapter) is necessary. A list of recommended adapters and known-compatible MIDI devices is available in the [List of Compatible USB Accessories](hypno-set-up-and-troubleshooting-manual.md#compatible-usb-accessories).&#x20;
+Hypno can act as a USB-MIDI host through its front microUSB port (or rear USB-A ports on a completed Hypno Kit), allowing you to edit or animate the module’s parameters with MIDI controllers, keyboards and more. In some cases, a USB OTG (microUSB adapter) is necessary. A list of recommended adapters and known-compatible MIDI devices is available in the [List of Compatible USB Accessories](hypno-manual.md#compatible-usb-accessories) below.&#x20;
 
 _Note: direct host to host USB-MIDI connections, such as between Hypno and a laptop, are not supported._
 
@@ -84,6 +84,48 @@ When organizing \[presets via the usb the presets follow the below naming scheme
 * As the [Midi Quick Guide](https://www.youtube.com/watch?v=xghMVRDGoV8) video says, midi F# G# and A# keys are used to trigger the three buttons of the Hypno, meaning that in the naming system, you have to mind skipping numbers corresponding to those keys ! For instance, “patch6.json” won’t work
 
 _(Thanks mcdouglas for the naming scheme breakdown!)_
+
+<details>
+
+<summary>OP-Z MIDI configuration (midi.json) from the OP-Z tutorial</summary>
+
+Edit the midi.json file in the config folder of your OP-Z to match the code below if you would like your OP-Z to operate like the one in the [Hypno & OP-Z Tutorial](https://www.youtube.com/watch?v=KxKJ7ShE5RI). Typically only the `track_channels` and `parameter_cc_out` lines need editing. See _22.2 Content Mode_ in the [official OP-Z manual](https://teenage.engineering/guides/op-z/disk-modes) for more information about editing OP-Z configuration files.
+
+```json
+{
+    "alt_program_change" : true,
+    "channel_one_to_active" : true,
+    "enable_program_change" : true,
+    "incoming_midi" : true,
+    "midi_echo" : true,
+    "outgoing_midi" : true,
+    "parameter_cc_out" :
+    [
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+        [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
+        [ 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ]
+    ],
+    "timing_clock_in" : true,
+    "timing_clock_out" : true,
+    "track_channels" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 14, 15 ],
+    "track_enable" : [ true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true ]
+}
+```
+
+</details>
 
 ## Video Quick-Guides
 
@@ -219,7 +261,7 @@ _(Thanks mcdouglas for the naming scheme breakdown!)_
 
 ## UVC Video Input (Cameras & Capture Cards)
 
-As of firmware revision 2.0, Hypno is capable of accepting video input from UVC compliant devices (USB 2.0, MJPEG compressed output), such as webcams or capture cards, through its top USB port. The [Setup & Troubleshooting Manual](hypno-set-up-and-troubleshooting-manual.md#5-uvc-input-usb-video-input) will walk you through setting up and troubleshooting this awesome feature.&#x20;
+As of firmware revision 2.0, Hypno is capable of accepting video input from UVC compliant devices (USB 2.0, MJPEG compressed output), such as webcams or capture cards, through its top USB port. The [Setup & Troubleshooting Manual](hypno-set-up-and-troubleshooting-manual.md#id-5.-uvc-input-usb-video-input) will walk you through setting up and troubleshooting this awesome feature.&#x20;
 
 ![](<../.gitbook/assets/Artboard 1 copy 5-100.jpg>)
 
@@ -230,7 +272,89 @@ As of [Firmware 2.2](hypno-firmware.md), Hypno can also load 720x480 resolution 
 * Video Input can be switched on-the-fly video loading from USB
   * Navigate to the root folder and take the file index knob all the way to the right (Clockwise)
 
-[UVC Video Input Setup & Troubleshooting Guide](hypno-set-up-and-troubleshooting-manual.md#5-uvc-input-usb-video-input)
+[UVC Video Input Setup & Troubleshooting Guide](hypno-set-up-and-troubleshooting-manual.md#id-5.-uvc-input-usb-video-input)
+
+<details>
+
+<summary>Guide: Using laptops, phones and tablets as a UVC video source</summary>
+
+**Connecting laptops, computers, digital cameras, and more**
+
+If your device features an HDMI output, you can probably use it as an input source for Hypno’s UVC input. It’s as simple as connecting your computer/device to a USB 2.0 HDMI capture device, and then connecting the capture card to Hypno with a USB OTG cable (microUSB adapter). Some computers may have other ports in place of HDMI, such as Thunderbolt or mini DisplayPort, but these can be easily adapted with a cheap dongle.
+
+**Connecting your iOS device to Hypno**
+
+Our [video guide](https://youtu.be/JLVM5uxzAhk) will walk you through all the steps necessary to connect your iPad or iPhone using an HDMI capture device and some dongles. iOS devices with Lightning output will require the [Apple Lightning to Digital AV (HDMI) Adapter](https://www.apple.com/shop/product/MD826AM/A/lightning-digital-av-adapter). Newer iPad “Pro” models use USB-C instead of Lightning, greatly expanding your choice of adapters for HDMI output. Please be aware that apps which stream copyrighted material, like HBO Max or Netflix, will likely not work with generic HDMI capture devices due to copy protections in place.
+
+**Connecting your Android device to Hypno**
+
+Many Android devices have hardware video outputs, though they may only be available as MiniHDMI, MicroHDMI, or USB-C. Mini and MicroHDMI ports will simply require an appropriate cable or plug adapter to interface with your HDMI capture device connected to Hypno. USB-C devices will need a USB-C to HDMI adapter.
+
+**UVC input and USB MIDI at the same time**
+
+Some users have reported success with using UVC input and USB MIDI input concurrently by employing a USB/OTG hub, especially those that are externally powered. It’s important to exercise caution when connecting multiple USB devices to Hypno with unpowered hubs as they will increase the power draw for Hypno. Attempting to draw too much power from the front USB port can cause Hypno to behave erratically, or may even damage Hypno (please note this kind of damage is not covered under manufacturer’s warranty). This [powered OTG hub](https://www.amazon.com/gp/product/B078MNW25Q) works well for us in testing.
+
+</details>
+
+### Compatible USB Accessories
+
+<details>
+
+<summary>List of USB accessories that are confirmed to work with Hypno</summary>
+
+**USB OTG adapters**
+
+A USB OTG adapter is required to convert from Hypno’s microUSB interface to the common USB-A port for accessories. This allows you to connect USB 2.0 webcams, capture cards and MIDI devices directly to Hypno’s front panel microUSB port. We’ve had success with the following OTG adapters:
+
+* [Rankie Micro USB (Male) to USB 2.0 (Female) OTG Adapter](https://www.amazon.com/Rankie-Female-Adapter-Convertor-3-Pack/dp/B00YOX4JU6/) (mating is good but not as reliable as some other adapters)
+* [UGREEN Micro USB 2.0 OTG Cable](https://www.amazon.com/gp/product/B00LN3LQKQ/)
+* [Lindy USB 2.0 OTG micro-B male / type A female adapter](https://www.lindy.com.au/usb-2-0-adapter-type-b-female-micro-b-male)
+* [Micro USB 2.0 OTG Powered HUB with Ethernet](https://www.amazon.com/gp/product/B078MNW25Q/)
+* [CableCreation Micro USB 2.0 OTG Cable](https://www.amazon.com/dp/B01M098EAG)
+
+**Always use caution with USB hubs, and provide sufficient power headroom when connecting multiple devices to Hypno. Powered hubs are recommended whenever multiple USB-powered devices are required, such as a webcam and a MIDI controller. Damage to Hypno caused by excessive power draw is not covered by warranty.**
+
+**Webcams**
+
+* [ELP Camera Module](https://www.amazon.com/ELP-Camera-Megapixel-Windows-Android/dp/B00KA7WSSU)
+* [Logitech HD Pro Webcam C920](https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S/) (can be purchased used quite easily)
+* [Zoom Q2n](https://zoomcorp.com/en/jp/video-recorders/video-recorders/q2n/)
+* [Zoom Q2n-4K](https://zoomcorp.com/en/us/video-recorders/video-recorders/q2n-4k-handy-video-recorder/)
+* [Logitech C270](https://www.target.com/p/logitech-c270-3-0mp-webcam-black-960-000694/-/A-13252212)
+* [Kano Webcam](https://www.amazon.com/dp/B08KSBSZTG/)
+* Pi Zero Webcam Gadget
+
+**Capture Cards**
+
+* [HDMI Capture (Generic)](https://www.amazon.com/dp/B08BFJVC3B/) (sold under many names)
+* [EasyCap devices](https://www.amazon.com/EasyCap-Capture-Video-Adapter-Converter/dp/B01H6OQI1W/) (sold under many names)
+
+**Other**
+
+* [Apple Lightning to Digital AV Adapter](https://www.amazon.com/Apple-Lightning-Digital-AV-Adapter/dp/B009WHV3BM/) (useful for taking HDMI out of an iOS device and plugging into an HDMI capture device)
+
+**USB MIDI devices**
+
+Hypno accepts MIDI control from **class-compliant USB 2.0 MIDI devices** like controllers, keyboards, synths, and grooveboxes. Because Hypno itself is a USB MIDI host, MIDI is not supported for host to host connections, such as between Hypno and a laptop. The following devices have been specifically tested with Hypno, but this is not a definitive list by any means:
+
+* [Generic USB MIDI to DIN converter](https://www.amazon.com/GELRHONR-Interface-Indicator-Keyboard-Vista-6-5Ft/dp/B095CFDJD9/)
+* Korg NanoKontrol2
+* Arturia BeatStep Pro
+* Elektron Digitakt
+* Elektron Digitone
+* Elektron Octatrack
+* Teenage Engineering OP-Z (see our [Hypno & OP-Z Tutorial](https://www.youtube.com/watch?v=KxKJ7ShE5RI)!)
+* iConnectivity Mio1
+* MIDIPlus Tbox 2x2
+* Novation RemoteZero SL
+* Midi Fighter Twister
+* Arturia Minilab Mk2
+* WIDI Bluetooth Midi Bud
+* [Roland UM-ONE MIDI Interface](https://www.roland.com/us/products/um-one/)
+
+Not sure about a specific accessory? Email support@sleepycircuits.com and we’ll help you out.
+
+</details>
 
 ## Video & Image Sampling Via USB
 
@@ -349,6 +473,81 @@ If your application supports Syphon or Spout (Such as vsynth in Max MSP), NDI ca
 * [NDI <-> Spou](https://spout.zeal.co/download-spout-to-ndi/)t
 
 
+
+</details>
+
+<details>
+
+<summary>Full Guide: Hypno + OBS via NDI on Windows</summary>
+
+1. Install [NDI Tools](https://ndi.tv/tools/) and verify your NDI connection in Studio Monitor (see the [NDI section of the Troubleshooting Guide](hypno-set-up-and-troubleshooting-manual.md#id-4.-ndi-output)). When installing NDI Tools, make sure to check the box for **Studio Monitor** in the installation configuration!
+
+![NDI Studio Monitor Installation](../.gitbook/assets/ndi-win-studio-monitor-install.jpeg)
+
+![Studio Monitor Hypno](../.gitbook/assets/ndi-win-studio-monitor-hypno.jpeg)
+
+2. Install the latest version of [OBS](https://obsproject.com/download)
+3. Install the latest version of the [obs-ndi plugin](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/)
+4. Next we need to access the individual firewall permissions in Windows through the Start menu
+
+![Allow Firewall](../.gitbook/assets/ndi-win-firewall.jpeg)
+
+5. Look for OBS in the list of applications. If “Public” is unchecked next to OBS, click on “Change Settings” and then check the box. Now click OK.
+
+![OBS allow](../.gitbook/assets/ndi-win-obs-allow.jpeg)
+
+6. Open OBS
+7. When adding a new video source, “NDI Source” is now available
+
+![NDI source](../.gitbook/assets/ndi-obs-source.jpeg)
+
+8. After it’s been added, double-click on the NDI Source in the Sources box to bring up the device options. Select HYPNO (main).
+
+![NDI hypno source](../.gitbook/assets/ndi-obs-hypno-source.jpeg)
+
+9. Press OK. Hypno should now be viewable in your main output window.
+
+If problems persist:
+
+* VPNs may cause issues, disabling them can resolve connectivity problems.
+* In some cases, disabling Windows Defender Firewall for Public Networks resolved connectivity issues. Not recommended when connected to public Wi-Fi networks (school, work, coffee shop).
+
+</details>
+
+<details>
+
+<summary>Full Guide: Hypno + OBS via NDI on Mac</summary>
+
+1. Install [NDI Tools](https://ndi.tv/tools/) for Mac (the installer automatically installs Studio Monitor) and verify your NDI connection in Studio Monitor (see the [NDI section of the Troubleshooting Guide](hypno-set-up-and-troubleshooting-manual.md#id-4.-ndi-output))
+2. Install the latest version of [OBS](https://obsproject.com/download)
+3. Install the latest version of the [obs-ndi plugin](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/)
+4. Restart your computer
+5. Open OBS
+6. When adding a new video source, “NDI Source” is now available
+
+![NDI source](../.gitbook/assets/ndi-obs-source.jpeg)
+
+7. After it’s been added, double-click on the NDI Source in the Sources box to bring up the device options. Select HYPNO (main).
+
+![NDI hypno source](../.gitbook/assets/ndi-obs-hypno-source.jpeg)
+
+8. Press OK. Hypno should now be viewable in your main output window.
+
+**Note about M1/Apple Silicon Macs:** the NDI plugin has known issues with OBS on Apple Silicon. A workaround is to use NDI Virtual Input (part of NDI Tools) and then use a regular camera source in OBS.
+
+</details>
+
+<details>
+
+<summary>Quick Tips for OBS and Hypno</summary>
+
+* With no HDMI output connected, Hypno will output 720x480 over NDI. If the HDMI is connected, the NDI output resolution will match the resolution of the HDMI output.
+* You can configure OBS to capture Hypno’s output to any resolution you like in the settings.
+* Use the Transform right-click menu to flip, stretch, fit, rotate and center your image.
+* Experiment with filters from the right-click menu to apply color correction, sharpening, or use masks and keys.
+* Use [OBS Virtualcam](https://obsproject.com/forum/resources/obs-virtualcam.949/) to send OBS’ output to other recording or processing programs that do not accept NDI.
+* Use NDI Virtual Input (part of [NDI Tools](https://ndi.tv/tools/)) to put Hypno directly into any application that supports webcam input.
+* NDI output and UVC input at the same time is not a viable configuration due to the bandwidth requirements of either transmission. If you need to monitor or record Hypno on your computer while using UVC input, use an additional HDMI capture device instead.
 
 </details>
 
