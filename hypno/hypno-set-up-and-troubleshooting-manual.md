@@ -394,7 +394,7 @@ Hypno is equipped with USB-MIDI Host capability, meaning it can accept incoming 
 
 ### Using the OP-Z to control Hypno with MIDI
 
-{% embed url="https://sleepy.tube/videos/watch/e24d3883-2457-40ba-b37a-0ba04802ee4f" %}
+{% embed url="https://www.youtube.com/watch?v=KxKJ7ShE5RI" %}
 How to use OP-Z with Hypno
 {% endembed %}
 
@@ -467,7 +467,7 @@ For Hypno DIY see [here](https://youtu.be/QfaHEeOPxZY?t=322) (and reverse the pr
 
 ### **Using the Mother-32 to control Hypno with CV**
 
-{% embed url="https://sleepy.tube/videos/watch/a7e9bcae-303f-440e-92b2-e6b8d5450b21" %}
+{% embed url="https://youtu.be/2NjUEZZtq_0" %}
 How to Create Audiovisuals with Moog Mother-32 and Hypno
 {% endembed %}
 
