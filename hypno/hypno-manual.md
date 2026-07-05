@@ -2,7 +2,7 @@
 description: A full description of Hypno's "Features".
 ---
 
-# Hypno Manual
+# Hypno 1 Manual
 
 {% hint style="info" %}
 As of May 2024 use of Hypno in Eurorack is no longer supported by Sleepy Circuits and the expanders have been discontinued due to reliability issues. If you are a new user plan to use Hypno as a standalone device.
@@ -28,7 +28,7 @@ Trying to decide whether you need a kit or a prebuilt? Not sure which Pi you wan
 {% endhint %}
 
 {% hint style="info" %}
-Need more help? [Read the FAQ](hypno-faq.md), Ask a Question on the [Forum](https://forum.sleepycircuits.com), or [Contact Us](https://sleepycircuits.com/contact)
+Need more help? [Read the FAQ](hypno-faq.md) or contact support@sleepycircuits.com
 {% endhint %}
 
 ## No labels? No problem. Try the "Help Text" Mode!
@@ -251,7 +251,7 @@ Recommended USB Drive Filesystem Format is FAT32.&#x20;
 Hypno also supports filesystems: vfat ext2 ext3 ext4 ntfs-3g ntfs exfat hfsplus&#x20;
 
 {% hint style="warning" %}
-Filesystem formatting may need further real world testing, please report issues [in the forum.](https://forum.sleepycircuits.com/t/hypno-2-2-3-release/663)
+Filesystem formatting may need further real world testing, please report issues via support@sleepycircuits.com
 {% endhint %}
 
 ### Preparing your Files
@@ -338,10 +338,6 @@ For more info check out NDI's own videos about their app suite: [https://www.you
 * Rear Ethernet Port (with or without Ethernet to USB dongle)
 
 ### Additional Resources
-
-[NDI Setup & Troubleshooting Guide for Mac](https://forum.sleepycircuits.com/t/ndi-obs-setup-troubleshooting-guide-for-mac/247/) on the forum
-
-[NDI Setup & Troubleshooting Guide for Windows](https://forum.sleepycircuits.com/t/ndi-obs-setup-troubleshooting-guide-for-windows/165/) on the forum
 
 [Hypno and OBS Tutorial Video](https://www.youtube.com/watch?v=4zX9Nx4yTdU) on YouTube
 
