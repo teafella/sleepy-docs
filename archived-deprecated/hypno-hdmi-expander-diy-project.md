@@ -35,7 +35,7 @@ description: >-
 {% endhint %}
 
 {% hint style="info" %}
-**In Trouble?** Check out the [related thread on sleepy forum.](https://forum.sleepycircuits.com/t/hypno-hdmi-expander-diy)
+**In Trouble?** Contact support@sleepycircuits.com
 {% endhint %}
 
 ### Part Lists

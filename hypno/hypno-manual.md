@@ -71,7 +71,7 @@ Plug an HDMI cable into your display (TV, monitor, projector, caputre card, etc.
 
 ## Midi **Chart/**&#x4D;ap (CH 16)
 
-Hypno can act as a USB-MIDI host through its front microUSB port (or rear USB-A ports on a completed Hypno Kit), allowing you to edit or animate the module’s parameters with MIDI controllers, keyboards and more. In some cases, a USB OTG (microUSB adapter) is necessary. A list of recommended adapters and known-compatible MIDI devices is available [on the forum.](https://forum.sleepycircuits.com/t/list-of-usb-accessories-that-work-with-hypno/127/)&#x20;
+Hypno can act as a USB-MIDI host through its front microUSB port (or rear USB-A ports on a completed Hypno Kit), allowing you to edit or animate the module’s parameters with MIDI controllers, keyboards and more. In some cases, a USB OTG (microUSB adapter) is necessary. A list of recommended adapters and known-compatible MIDI devices is available in the [List of Compatible USB Accessories](hypno-set-up-and-troubleshooting-manual.md#compatible-usb-accessories).&#x20;
 
 _Note: direct host to host USB-MIDI connections, such as between Hypno and a laptop, are not supported._
 
@@ -83,7 +83,7 @@ When organizing \[presets via the usb the presets follow the below naming scheme
 * From “patch3.json” on, you can recall them with a Eb0 message on midi channel 16
 * As the [Midi Quick Guide](https://www.youtube.com/watch?v=xghMVRDGoV8) video says, midi F# G# and A# keys are used to trigger the three buttons of the Hypno, meaning that in the naming system, you have to mind skipping numbers corresponding to those keys ! For instance, “patch6.json” won’t work
 
-_(Thanks @_[_mcdouglas_](https://forum.sleepycircuits.com/u/mcdouglas) _from the forum for the naming scheme breakdown!)_
+_(Thanks mcdouglas for the naming scheme breakdown!)_
 
 ## Video Quick-Guides
 
@@ -219,18 +219,18 @@ _(Thanks @_[_mcdouglas_](https://forum.sleepycircuits.com/u/mcdouglas) _from the
 
 ## UVC Video Input (Cameras & Capture Cards)
 
-As of firmware revision 2.0, Hypno is capable of accepting video input from UVC compliant devices (USB 2.0, MJPEG compressed output), such as webcams or capture cards, through its top USB port. Our forum guide will walk you through setting up and troubleshooting this awesome new feature.&#x20;
+As of firmware revision 2.0, Hypno is capable of accepting video input from UVC compliant devices (USB 2.0, MJPEG compressed output), such as webcams or capture cards, through its top USB port. The [Setup & Troubleshooting Manual](hypno-set-up-and-troubleshooting-manual.md#5-uvc-input-usb-video-input) will walk you through setting up and troubleshooting this awesome feature.&#x20;
 
 ![](<../.gitbook/assets/Artboard 1 copy 5-100.jpg>)
 
-As of [Firmware 2.2](https://forum.sleepycircuits.com/t/hypno-firmware-2-2/520?u=sleepybrian), Hypno can also load 720x480 resolution .MP4 videos and .JPEG Images from a connected USB drive. See the PDF Manual  for more information (quick guide video coming soon).
+As of [Firmware 2.2](hypno-firmware.md), Hypno can also load 720x480 resolution .MP4 videos and .JPEG Images from a connected USB drive. See the PDF Manual  for more information (quick guide video coming soon).
 
 ![](<../.gitbook/assets/Artboard 1 copy 7-100.jpg>)
 
 * Video Input can be switched on-the-fly video loading from USB
   * Navigate to the root folder and take the file index knob all the way to the right (Clockwise)
 
-[UVC Video Input Setup & Troubleshooting Guide](https://forum.sleepycircuits.com/t/uvc-video-input-setup-and-troubleshooting-guide/235)
+[UVC Video Input Setup & Troubleshooting Guide](hypno-set-up-and-troubleshooting-manual.md#5-uvc-input-usb-video-input)
 
 ## Video & Image Sampling Via USB
 

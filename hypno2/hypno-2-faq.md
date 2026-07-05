@@ -41,5 +41,5 @@ Common questions and answers about using Hypno 2.
 **Q: How do I get back to the main application from desktop mode?** A: Manually launch it from the script on the desktop to switch back.
 
 {% hint style="success" %}
-Still need help? Check the [Troubleshooting Guide](hypno-2-troubleshooting.md) or contact support.
+Still need help? Check the [Troubleshooting Guide](hypno-2-troubleshooting.md) or email [support@sleepycircuits.com](mailto:support@sleepycircuits.com).
 {% endhint %}

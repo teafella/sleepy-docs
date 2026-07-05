@@ -29,7 +29,7 @@ Step-by-step solutions for common issues with Hypno 2.
 1. Ensure power adapter is the official Pi5 one
 2. Check power adapter connection
 3. Try a different power outlet
-4. Contact support if issue persists
+4. Contact support@sleepycircuits.com if issue persists
 
 ### Random Shutdowns
 
@@ -78,7 +78,7 @@ Step-by-step solutions for common issues with Hypno 2.
 
 ### MIDI Connection Problems
 
-1. **USB MIDI Not Detected**: Try different USB port, check device compatibility on forum.sleepycircuits.com
+1. **USB MIDI Not Detected**: Try different USB port; if you are unsure about device compatibility email support@sleepycircuits.com
 2. **Bluetooth MIDI Won't Pair**: Enable Bluetooth in Settings first, put controller in pairing mode
 3. **MIDI Learn Not Working**: Ensure parameter is selected before moving MIDI control
 4. **Latency Issues**: Check for USB interference, try different MIDI channel
@@ -112,8 +112,7 @@ Step-by-step solutions for common issues with Hypno 2.
 If these steps don't solve your issue:
 
 1. Check the [FAQ](hypno-2-faq.md)
-2. Visit the forum.sleepycircuits.com
-3. Open a support ticket w/ support@sleepycircuits.com
+2. Open a support ticket w/ support@sleepycircuits.com
 
 {% hint style="success" %}
 Include your firmware version and describe the exact issue when contacting support. Include video recordings of issue if possible.

@@ -12,6 +12,10 @@ By downloading these images you agree not to decompile our code or use the provi
 
 ## Firmware Images
 
+{% hint style="success" %}
+**Firmware downloads now live on** [**shadygram.com**](https://shadygram.com)**!** Sign in, tap your user pill (avatar in the top right), and open the **Firmware** link in the dropdown to see all available firmware. The Dropbox links below are kept as historical mirrors.
+{% endhint %}
+
 {% hint style="danger" %}
 **Warning**: Updating will wipe your presets. Save them to your USB Drive! \
 &#xNAN;_(Recall your preset, plug in a USB Drive into Hypno and re-save your preset, it will save to USB automatically when a drive is found, check the presets directory on drive after)_
@@ -39,7 +43,7 @@ Jun 2024: [**Hypno 2.4.4 PI3/CM3**](https://www.dropbox.com/scl/fi/3jb9xxw0saqub
 * bugfixes for elektron device 0vel noteons
 * bugfixes for Mezzz "hypno mode" echoes
 
-Feb 2024: [**Hypno 2.4 NTSC PI3/CM3**](https://www.dropbox.com/scl/fi/qfxkzdwrqzik42ganzj4g/HypnoPi3CM3-2.4.2.img.gz?rlkey=vkw42eqidech1hjicty43xfj6\&dl=1) **|** [**Hypno 2.4 NTSC PI4/CM4**](https://www.dropbox.com/scl/fi/7wwpjvunis2hd06slfc80/HypnoPi4-2.4.1.img.gz?rlkey=a7rez7vylz5nz4xqnewwal7a7\&dl=1) **|** [**Forum Thread**](https://forum.sleepycircuits.com/t/hypno-2-4-release/1175)
+Feb 2024: [**Hypno 2.4 NTSC PI3/CM3**](https://www.dropbox.com/scl/fi/qfxkzdwrqzik42ganzj4g/HypnoPi3CM3-2.4.2.img.gz?rlkey=vkw42eqidech1hjicty43xfj6\&dl=1) **|** [**Hypno 2.4 NTSC PI4/CM4**](https://www.dropbox.com/scl/fi/7wwpjvunis2hd06slfc80/HypnoPi4-2.4.1.img.gz?rlkey=a7rez7vylz5nz4xqnewwal7a7\&dl=1)
 
 * Graphics Engine Resolution scaling
 * Display mode selection for pi4 (pi3 just auto selects the first mode like before)
@@ -65,7 +69,7 @@ Feb 2024: [**Hypno 2.4 NTSC PI3/CM3**](https://www.dropbox.com/scl/fi/qfxkzdwrqz
   * CV offset on startup bug: leaving gain patched with physical cable makes a weird offset to the parameter for that whole session (couldn't figure this one out yet)
   * Help Mode glitching out and showing weird black pixels instead of text.
 
-**Dec 2022:**[ **NTSC 2.3 PI3/CM3**](https://www.dropbox.com/scl/fi/bv0e94f0t8n3bdhke3ktg/Hypno2.3-PI3-Release2.img.gz?rlkey=x8wbj7m0zxzlo7pkzu1rn7o7d\&dl=1) **|**[ **NTSC 2.3 PI4**](https://www.dropbox.com/scl/fi/86bcc09flzoln2mtn9t3s/Hypno2.3-PI4-Release2.img.gz?rlkey=czheheqo8bik13pvgfyo4s986\&dl=1) **|** [**Forum Thread**](https://forum.sleepycircuits.com/t/hypno-2-3-release/870?u=sleepyron)
+**Dec 2022:**[ **NTSC 2.3 PI3/CM3**](https://www.dropbox.com/scl/fi/bv0e94f0t8n3bdhke3ktg/Hypno2.3-PI3-Release2.img.gz?rlkey=x8wbj7m0zxzlo7pkzu1rn7o7d\&dl=1) **|**[ **NTSC 2.3 PI4**](https://www.dropbox.com/scl/fi/86bcc09flzoln2mtn9t3s/Hypno2.3-PI4-Release2.img.gz?rlkey=czheheqo8bik13pvgfyo4s986\&dl=1)
 
 * hue remapping on preset pot 2 (gain), all the way to the right is hue mapping left is gain default
   * help text displays mapping
@@ -80,7 +84,7 @@ Feb 2024: [**Hypno 2.4 NTSC PI3/CM3**](https://www.dropbox.com/scl/fi/qfxkzdwrqz
 * Bugfix: bug where some files would get skipped by the folder navigation due to a typo in code
 * Bugfix: Video playback freezes when left shape is unpatched&#x20;
 
-**May 2022: NTSC 2.2.3 PI3/CM3 | NTSC 2.2.3 PI4 |** [**Forum Thread**](https://forum.sleepycircuits.com/t/hypno-2-2-3-release/663)
+**May 2022: NTSC 2.2.3 PI3/CM3 | NTSC 2.2.3 PI4**
 
 * Folder-based file navigation for usb loading&#x20;
   * Help mode: displays file and folder names
@@ -109,7 +113,7 @@ Feb 2024: [**Hypno 2.4 NTSC PI3/CM3**](https://www.dropbox.com/scl/fi/qfxkzdwrqz
     * Poly (formally square) - num sides (aspect stretch already possible with crop X/Y controls)
   * New manual: [Hypno Manual](hypno-manual.md)
 
-#### Nov 2021: NTSC 2.2.2 | [Forum Thread](https://forum.sleepycircuits.com/t/hypno-firmware-2-2/520?u=sleepyron)
+#### Nov 2021: NTSC 2.2.2
 
 * USB Stick MP4/JPEG Loading&#x20;
   * MP4 sample file: [Cube](https://www.dropbox.com/s/470eqeggn9mjxql/Cube1.mp4?dl=1)

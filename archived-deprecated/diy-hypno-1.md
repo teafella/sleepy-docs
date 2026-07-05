@@ -9,7 +9,7 @@ description: Dream It Yourself!
 {% endhint %}
 
 {% hint style="info" %}
-**In Trouble?** Post on [our forum](https://forum.sleepycircuits.com), ask the [chat ](https://forum.sleepycircuits.com/t/new-beta-chat-room-via-matrix/554)or contact support@sleepycircuits.com
+**In Trouble?** Ask in the [chat on shadygram.com](https://shadygram.com) or contact support@sleepycircuits.com
 {% endhint %}
 
 ## Video Assembly Guide
