@@ -316,8 +316,10 @@ The system automatically generates and caches thumbnails for images and videos. 
 
 ### Video
 - **MP4**: Primary format with H.264/H.265 encoding
-- **MOV, WebM**: Additional container formats
-- Videos must be decoded before use in channels. Use the file browser to batch decode.
+- **MOV, WebM, MKV, AVI**: Additional container formats
+- Videos play straight away with **Load** — no decoding needed. Videos taller than 720 lines are scaled down to 720.
+- **Decode** is still available for any video that has not been decoded. A decoded video gives the fastest scrubbing and reverse playback, especially for long clips and phone footage. Once a video is decoded, Load uses the decoded version.
+- Audio inside a video is extracted automatically the first time the video is loaded.
 
 ### Audio
 - **WAV**: Primary audio format for mixing and playback
@@ -335,7 +337,7 @@ Select files individually by touching checkboxes, or select all with the master 
 - **Copy**: Duplicate files to another location
 - **Delete**: Remove selected files with confirmation
 - **Encode**: Convert videos to optimized format for playback
-- **Decode**: Prepare videos for channel use
+- **Decode**: Convert videos to frames for the fastest scrubbing and reverse playback
 - **Delete Encoded/Decoded Only**: Remove specific versions, keep others
 
 Progress tracking shows real-time progress bars with frame counts and cancellation support. Create new folders by touching the (+) button — this opens the keyboard in folder creation mode with a yellow/orange header.

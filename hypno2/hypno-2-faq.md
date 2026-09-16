@@ -26,7 +26,7 @@ Common questions and answers about using Hypno 2.
 
 ## Connectivity
 
-**Q: What video formats are supported?** A: MP4 is the primary supported format (H.264 encoding recommended). The system required decoding before a video can be used in a channel
+**Q: What video formats are supported?** A: MP4 is the primary supported format (H.264 encoding recommended); MOV, WebM, MKV and AVI also play. Videos load straight into a channel without decoding. Decoding a video first gives the fastest scrubbing and reverse playback.
 
 **Q: Can I use MIDI controllers?** A: Yes! Hypno 2 has comprehensive MIDI support including USB MIDI (plug-and-play) and Bluetooth MIDI (wireless). All of the channels come pre-mapped in a sequential order.
 
