@@ -152,6 +152,10 @@ Track A (Channel 1) parameter pages. The top bar shows "Ch 1:" followed by the l
 
 **Texture slots:** a shader that takes pictures in (an ISF shader with image inputs) shows how many of its slots are filled after its name, e.g. "(1/2)", and a picture icon beside the title. Tap the icon to open a row of squares, one per slot (a filled slot shows its picture or video, an empty one its name); tap a square to open the file browser, then **Load** an image or video to put it in that slot. Tap the title to open the shader file in the browser. Loading a clip or another shader over a channel, and filling a slot, can all be undone.
 
+<figure><img src="../.gitbook/assets/tour_45_isf_texture_slots_empty_v2.0.2.png" alt="ISF texture slots, empty"><figcaption><p>Texture Slots — Empty (0/2)</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/tour_46_isf_texture_slots_filled_v2.0.2.png" alt="ISF texture slots, one filled"><figcaption><p>Texture Slots — One Filled (1/2)</p></figcaption></figure>
+
 Position and speed controls for Channel 1's shader.
 - **x offset** (left encoder, CC 0): horizontal position of the shader pattern
 - **frequency** (center encoder, CC 1): speed or frequency of the shader animation
