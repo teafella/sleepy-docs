@@ -150,12 +150,6 @@ Track A (Channel 1) parameter pages. The top bar shows "Ch 1:" followed by the l
 
 **Video and audio clips:** with a clip loaded, the first three knobs of page 1 become **loop in** (left, CC 0), **framerate** (center, CC 1) and **loop out** (right, CC 2), and every shader parameter below moves up three CCs (x offset is then CC 3, and so on). Framerate is the clip's playback speed: 0 is its normal speed, -1 stops it, and below that it plays backward. The knob taps (haptics) at stopped and at normal speed forward and backward. Loop out at 0 plays to the end of the clip. It reads **pitch** instead while the clock source is not OFF and the clip has sound. With a clip loaded, a channel's BPM is measured from its audio when it loads (see the [Clock page](#clockbpm-page)).
 
-**Texture slots:** a shader that takes pictures in (an ISF shader with image inputs) shows how many of its slots are filled after its name, e.g. "(1/2)", and a picture icon beside the title. Tap the icon to open a row of squares, one per slot (a filled slot shows its picture or video, an empty one its name); tap a square to open the file browser, then **Load** an image or video to put it in that slot. Tap the title to open the shader file in the browser. Loading a clip or another shader over a channel, and filling a slot, can all be undone.
-
-<figure><img src="../.gitbook/assets/tour_45_isf_texture_slots_empty_v2.0.2.png" alt="ISF texture slots, empty"><figcaption><p>Texture Slots — Empty (0/2)</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/tour_46_isf_texture_slots_filled_v2.0.2.png" alt="ISF texture slots, one filled"><figcaption><p>Texture Slots — One Filled (1/2)</p></figcaption></figure>
-
 Position and speed controls for Channel 1's shader.
 - **x offset** (left encoder, CC 0): horizontal position of the shader pattern
 - **frequency** (center encoder, CC 1): speed or frequency of the shader animation
@@ -240,6 +234,13 @@ Color adjustment controls (OKLab color space).
 - **hue** (left encoder, CC 63): hue shift of the shader output
 - **chrominance** (center encoder, CC 64): color saturation intensity
 - **lightness** (right encoder, CC 65): brightness/lightness of the output
+
+
+**Texture slots:** a shader that takes pictures in (an ISF shader with image inputs) shows how many of its slots are filled after its name, e.g. "(1/2)", and a picture icon beside the title. Tap the icon to open a row of squares, one per slot (a filled slot shows its picture or video, an empty one its name); tap a square to open the file browser, then **Load** an image or video to put it in that slot. Tap the title to open the shader file in the browser. Loading a clip or another shader over a channel, and filling a slot, can all be undone.
+
+<figure><img src="../.gitbook/assets/tour_45_isf_texture_slots_empty_v2.0.2.png" alt="ISF texture slots, empty"><figcaption><p>Texture Slots — Empty (0/2)</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/tour_46_isf_texture_slots_filled_v2.0.2.png" alt="ISF texture slots, one filled"><figcaption><p>Texture Slots — One Filled (1/2)</p></figcaption></figure>
 
 
 ## Modulation Pages (Parameter label tap)
