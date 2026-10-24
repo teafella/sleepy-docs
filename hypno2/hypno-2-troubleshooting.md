@@ -103,9 +103,10 @@ Step-by-step solutions for common issues with Hypno 2.
 
 ### Recording Problems
 
-1. **Recording Won't Start**: Check available disk space
-2. **Recording Stutters**: Reduce visual complexity/sampled file sizes during recording
-3. **Can't Find Recordings**: Check Resources/Recordings/ directory
+1. **Recording Won't Start**: Check available disk space. If the last recording is still saving, wait for it to finish
+2. **Recording Stopped By Itself**: Storage ran low; the recording up to that point is saved
+3. **Recording Stutters**: Reduce visual complexity/sampled file sizes during recording
+4. **Can't Find Recordings**: Check Resources/Recordings/ directory
 
 ## Getting Help
 
