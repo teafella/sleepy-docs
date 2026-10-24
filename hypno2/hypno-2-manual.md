@@ -36,7 +36,7 @@ The interface uses consistent visual language: black backgrounds indicate toucha
 
 ## Startup
 
-<figure><img src="../.gitbook/assets/tour_01_startup_popup.png" alt="Startup popup"><figcaption><p>Startup Popup</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_01_startup_popup_v2.0.2.png" alt="Startup popup"><figcaption><p>Startup Popup</p></figcaption></figure>
 
 Shown on first boot or when previous session data is available.
 - **Hypno 2 logo** and QR code linking to docs.sleepycircuits.com/hypno2
@@ -47,7 +47,7 @@ On the very first boot a welcome screen is followed by setting a device nickname
 
 ## Home Screen / Main
 
-<figure><img src="../.gitbook/assets/tour_02_home_screen.png" alt="Home screen"><figcaption><p>Home Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_02_home_screen_v2.0.2.png" alt="Home screen"><figcaption><p>Home Screen</p></figcaption></figure>
 
 The main control interface where you spend most of your time.
 - **Top left**: settings gear icon. Below it: save preset button (+), then the recent preset thumbnails (tap to load; hold one to save the current state over that slot)
@@ -76,7 +76,7 @@ Presets save as `.json` files containing complete system state including all par
 
 ## Mixer & FX (Effect Shader fx_feedback.frag shown)
 
-<figure><img src="../.gitbook/assets/tour_19_main_cc00.png" alt="Main CC 0-2"><figcaption><p>Main — Page 1: Mixer (CC 0-2)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_19_main_cc00_v2.0.2.png" alt="Main CC 0-2"><figcaption><p>Main — Page 1: Mixer (CC 0-2)</p></figcaption></figure>
 
 The Main track (MIDI Channel 16) controls the global mixer and feedback shader (fx\_feedback.frag). The top bar shows "Main:" followed by the FX shader name. These parameters affect how Channels 1 and 2 are blended together and how the feedback loop behaves.
 
@@ -135,7 +135,7 @@ The remaining modes are follow actions: when the clip ends, the channel moves on
 
 ### Fullscreen Mode
 
-<figure><img src="../.gitbook/assets/tour_03_fullscreen.png" alt="Fullscreen mode"><figcaption><p>Fullscreen Mode</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_03_fullscreen_v2.0.2.png" alt="Fullscreen mode"><figcaption><p>Fullscreen Mode</p></figcaption></figure>
 
 Clean video output with all UI elements hidden.
 - The shader output fills the entire 800x480 screen
@@ -144,7 +144,7 @@ Clean video output with all UI elements hidden.
 
 ## Track A Parameter Pages (Ch 1)
 
-<figure><img src="../.gitbook/assets/tour_04_track_a_cc00.png" alt="Track A CC 0-2"><figcaption><p>Track A — Page 1 (CC 0-2)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_04_track_a_cc00_v2.0.2.png" alt="Track A CC 0-2"><figcaption><p>Track A — Page 1 (CC 0-2)</p></figcaption></figure>
 
 Track A (Channel 1) parameter pages. The top bar shows "Ch 1:" followed by the loaded shader name. Each page has 3 parameter knobs at the bottom controlled by the left, center, and right hardware encoders. Tap any parameter name to open its modulation menu. "---" indicates an unused parameter slot. Page dots above the center knob show which page you're on. Use the left/right arrows to navigate between pages.
 
@@ -198,7 +198,7 @@ Parameters vary by loaded shader. The CC numbers shown here are defaults — eac
 
 ## Track B Parameter Pages (Ch 2) (Generative shape: sin.frag shown)
 
-<figure><img src="../.gitbook/assets/tour_12_track_b_cc00.png" alt="Track B CC 0-2"><figcaption><p>Track B — Page 1 (CC 0-2)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_12_track_b_cc00_v2.0.2.png" alt="Track B CC 0-2"><figcaption><p>Track B — Page 1 (CC 0-2)</p></figcaption></figure>
 
 Track B (Channel 2) uses the same layout as Track A. The top bar shows "Ch 2:" followed by the loaded shader name. Parameters vary depending on which shader is loaded — different shaders expose different controls (sin.frag shown in these screenshots).
 
@@ -240,7 +240,7 @@ Color adjustment controls (OKLab color space).
 
 ## Modulation Pages (Parameter label tap)
 
-<figure><img src="../.gitbook/assets/tour_22_mod_badge_internal.png" alt="Internal LFO modulation"><figcaption><p>Modulation — Internal LFO</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_22_mod_badge_internal_v2.0.2.png" alt="Internal LFO modulation"><figcaption><p>Modulation — Internal LFO</p></figcaption></figure>
 
 The modulation menu opens when you tap a parameter name on any parameter page. Each parameter can receive modulation from multiple sources with independent gain control. The header in the top-right displays the channel name, CC number, parameter name, and current value.
 
@@ -256,14 +256,14 @@ The default view shows the internal LFO (Low Frequency Oscillator) modulation so
 
 The scope renderer provides real-time waveform displays for CV input levels, MIDI CC values, and audio levels. LED-style numeric indicators show precise values for control signals, useful for calibrating modulation depths and monitoring external input.
 
-<figure><img src="../.gitbook/assets/tour_23_mod_badge_ear_p1.png" alt="Audio modulation page 1"><figcaption><p>Modulation — Audio Input, Page 1: Gain &amp; Smooth</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_23_mod_badge_ear_p1_v2.0.2.png" alt="Audio modulation page 1"><figcaption><p>Modulation — Audio Input, Page 1: Gain &amp; Smooth</p></figcaption></figure>
 
 Audio input (AUX/microphone) modulation settings, page 1 of 2. The ear badge on the left is selected (blue ring). The built-in microphone provides audio-following modulation with adjustable magnitude (bipolar -1 to +1) and slew rate (0 to 1). If a jack is plugged into aux, the ear is replaced.
 - **gain** (left encoder): modulation depth — how strongly audio input affects the parameter
 - **smooth** (center encoder): response smoothing — higher values create slower, smoother modulation response
 - **src** (right encoder): which input the ear follows — **auto** (the aux jack when a cable is plugged in, otherwise the built-in microphone), **mic** or **aux**. The aux jack has no frequency bands, so page 2 is only available with the microphone.
 
-<figure><img src="../.gitbook/assets/tour_24_mod_badge_ear_p2.png" alt="Audio modulation page 2"><figcaption><p>Modulation — Audio Input, Page 2: Frequency Bands</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_24_mod_badge_ear_p2_v2.0.2.png" alt="Audio modulation page 2"><figcaption><p>Modulation — Audio Input, Page 2: Frequency Bands</p></figcaption></figure>
 
 Audio input frequency band controls, page 2 of 2. Lets you isolate specific frequency ranges.
 - **LOW** (left encoder): low frequency band gain (bass response)
@@ -271,34 +271,34 @@ Audio input frequency band controls, page 2 of 2. Lets you isolate specific freq
 - **HIGH** (right encoder): high frequency band gain (treble response)
 - Colored glow indicators on the badges show real-time band activity (red/green/blue)
 
-<figure><img src="../.gitbook/assets/tour_25_mod_badge_cv.png" alt="CV modulation"><figcaption><p>Modulation — CV Input</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_25_mod_badge_cv_v2.0.2.png" alt="CV modulation"><figcaption><p>Modulation — CV Input</p></figcaption></figure>
 
 Control voltage input modulation settings. One of the 4 CV jack badges on the left is selected (blue ring).
 - **gain** (left encoder): modulation depth from the selected CV input jack
 - **smooth** (center encoder): input smoothing to reduce noise or jitter on the CV signal
 - Select which CV jack (1-4) by tapping the corresponding badge on the left
 
-<figure><img src="../.gitbook/assets/tour_26_mod_badge_cc.png" alt="MIDI CC modulation"><figcaption><p>Modulation — MIDI CC</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_26_mod_badge_cc_v2.0.2.png" alt="MIDI CC modulation"><figcaption><p>Modulation — MIDI CC</p></figcaption></figure>
 
 MIDI Control Change modulation settings. The "cc0" badge on the right is selected (blue ring). Each parameter can be remapped to respond to any MIDI CC number between 0-127, independent of its default CC assignment. This allows custom MIDI controller layouts. MIDI mappings save with presets.
 - **gain** (left encoder): modulation depth from incoming MIDI CC messages (bipolar)
 - **smooth** (center encoder): input smoothing for the MIDI CC signal (0 to 1)
 - **cc#** (right encoder): MIDI CC number mapping (0-127) — remap which CC number controls this parameter
 
-<figure><img src="../.gitbook/assets/tour_27_mod_badge_clock.png" alt="Clock modulation"><figcaption><p>Modulation — Clock/BPM Sync</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_27_mod_badge_clock_v2.0.2.png" alt="Clock modulation"><figcaption><p>Modulation — Clock/BPM Sync</p></figcaption></figure>
 
 Clock and BPM synchronization settings. When BPM sync is enabled, modulation locks to external clock sources through two independent trigger inputs. The trigger interval BPM display converts incoming trigger frequencies to beats per minute readings at 64ppqn, with each trigger input showing its own readout.
 - **source** (left encoder): clock source selection — OFF, BPM (the master tempo), CLK1 (trigger input 1), CLK2 (trigger input 2)
 - **division** (center encoder): clock division ratio — 1/32, 1/16, 1/8, 1/4, 1/2, 1/1, 2x, 4x, 8x, 16x
 - **re-trig** (right encoder): retrigger ON/OFF — resets the LFO phase on each clock pulse
 
-<figure><img src="../.gitbook/assets/tour_28_mod_badge_track_p1.png" alt="Track modulation page 1"><figcaption><p>Modulation — Audio Track, Page 1: Gain &amp; Smooth</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_28_mod_badge_track_p1_v2.0.2.png" alt="Track modulation page 1"><figcaption><p>Modulation — Audio Track, Page 1: Gain &amp; Smooth</p></figcaption></figure>
 
 Audio track modulation settings, page 1 of 2. Uses audio from a video channel's loaded media as a modulation source. A track badge at the bottom is selected (blue ring, shows BPM readout).
 - **gain** (left encoder): modulation depth from the audio track
 - **smooth** (center encoder): response smoothing for the audio signal
 
-<figure><img src="../.gitbook/assets/tour_29_mod_badge_track_p2.png" alt="Track modulation page 2"><figcaption><p>Modulation — Audio Track, Page 2: Frequency Bands</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_29_mod_badge_track_p2_v2.0.2.png" alt="Track modulation page 2"><figcaption><p>Modulation — Audio Track, Page 2: Frequency Bands</p></figcaption></figure>
 
 Audio track frequency band controls, page 2 of 2. Same band controls as the ear/audio input.
 - **LOW** (left encoder): low frequency band gain (bass)
@@ -307,7 +307,7 @@ Audio track frequency band controls, page 2 of 2. Same band controls as the ear/
 
 ## Clock/BPM Page
 
-<figure><img src="../.gitbook/assets/tour_30_clock_page.png" alt="Clock page"><figcaption><p>Clock / BPM Settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_30_clock_page_v2.0.2.png" alt="Clock page"><figcaption><p>Clock / BPM Settings</p></figcaption></figure>
 
 Global tempo and clock configuration. Access this page by tapping the BPM value in the top right corner.
 - **BPM** (left encoder): set the master tempo in beats per minute. Only adjustable when the clock is the Hypno 2's own or System Link's; with an external clock it shows that clock's measured tempo ("ext").
@@ -320,7 +320,7 @@ When Channel 1/2 is selected
 
 ## File Browser
 
-<figure><img src="../.gitbook/assets/tour_31_file_browser.png" alt="File browser"><figcaption><p>File Browser</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_31_file_browser_v2.0.2.png" alt="File browser"><figcaption><p>File Browser</p></figcaption></figure>
 
 Browse and manage files on internal storage, USB drives and Sleepy Cloud. The file browser uses checkboxes for multi-selection with a master checkbox in the header to select/clear all.
 - **Top bar**: the current directory path (tap it to go up one folder). On the right, shortcut icons: USB drives (when one is connected), Sleepy Cloud (when installed; dimmed while signed out or offline), cameras and NDI sources (when one is found), the video content folder, the Presets folder, search (magnifying glass) and new folder (+).
@@ -412,7 +412,7 @@ USB drives mount automatically when connected, with support for multiple partiti
 
 ### Search
 
-<figure><img src="../.gitbook/assets/tour_41_file_browser_search.png" alt="File browser search results"><figcaption><p>File Browser — Search Results</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_41_file_browser_search_v2.0.2.png" alt="File browser search results"><figcaption><p>File Browser — Search Results</p></figcaption></figure>
 
 Touch the search icon and type a name to find files in the Resources folder. Search results appear asynchronously without blocking the UI, and the list stops at the first 100 matches. With Settings > System > Web Search ON, matching online videos are listed too: select one and use **Download** (or **Cancel DL** while it downloads).
 - **Header**: "Search Results (N files)" showing the number of matches found
@@ -424,7 +424,7 @@ Touch the search icon and type a name to find files in the Resources folder. Sea
 
 Access settings through the gear icon on the home screen. The settings menu is organized into tabs along the left column.
 
-<figure><img src="../.gitbook/assets/tour_32_settings_system.png" alt="Settings system tab"><figcaption><p>Settings — System</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_32_settings_system_v2.0.2.png" alt="Settings system tab"><figcaption><p>Settings — System</p></figcaption></figure>
 
 ### System
 
@@ -446,7 +446,7 @@ System information and general device settings.
 - **Encoder Accel: 1.00**: how quickly the encoders speed up when turned fast (0.10 to 5.00)
 - **Register Device** (only while the Hypno 2 is not registered) and **Send Crash Report** (only when registered and online)
 
-<figure><img src="../.gitbook/assets/tour_33_settings_display.png" alt="Settings display tab"><figcaption><p>Settings — Video</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_33_settings_display_v2.0.2.png" alt="Settings display tab"><figcaption><p>Settings — Video</p></figcaption></figure>
 
 ### Video
 
@@ -458,7 +458,7 @@ Resolution scale, and the output resolution for the HDMI display.
 - Tap any resolution to switch the HDMI output to that mode
 - With no display connected, the list is replaced by "No external display"
 
-<figure><img src="../.gitbook/assets/tour_34_settings_audio.png" alt="Settings audio tab"><figcaption><p>Settings — Audio</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_34_settings_audio_v2.0.2.png" alt="Settings audio tab"><figcaption><p>Settings — Audio</p></figcaption></figure>
 
 ### Audio
 
@@ -470,7 +470,7 @@ Audio output device configuration.
 - USB audio devices appear in this list when connected, with both **In** and **Out** toggle options
 - Track assignment prefixes appear for input devices (M: for Unity Gain, 1: for Track A assign, 2: for Track B assign), tap to rotate assignment
 
-<figure><img src="../.gitbook/assets/tour_35_settings_wifi.png" alt="Settings WiFi tab"><figcaption><p>Settings — Network</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_35_settings_wifi_v2.0.2.png" alt="Settings WiFi tab"><figcaption><p>Settings — Network</p></figcaption></figure>
 
 ### Network
 
@@ -481,7 +481,7 @@ Wi-Fi network configuration.
 - Tap a network name to connect — a keyboard appears for password entry if the network is secured
 - Connected networks show "(Connected)" label
 
-<figure><img src="../.gitbook/assets/tour_36_settings_bluetooth.png" alt="Settings Bluetooth tab"><figcaption><p>Settings — Bluetooth</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_36_settings_bluetooth_v2.0.2.png" alt="Settings Bluetooth tab"><figcaption><p>Settings — Bluetooth</p></figcaption></figure>
 
 ### Bluetooth
 
@@ -491,7 +491,7 @@ Bluetooth device pairing and management. Supports MIDI controllers.
 - Tap a nearby device to pair and connect it, or tap a paired device to disconnect and unpair it
 - Each connected Bluetooth MIDI device gets its own In/Out switches on the MIDI tab
 
-<figure><img src="../.gitbook/assets/tour_37_settings_midi.png" alt="Settings MIDI tab"><figcaption><p>Settings — MIDI</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_37_settings_midi_v2.0.2.png" alt="Settings MIDI tab"><figcaption><p>Settings — MIDI</p></figcaption></figure>
 
 ### MIDI Devices
 
@@ -504,13 +504,13 @@ MIDI device management and routing.
 
 USB MIDI controllers connect plug-and-play with automatic detection and support for multiple simultaneous devices. For Bluetooth MIDI, enable Bluetooth in Settings, put the controller in pairing mode, and accept the connection when the popup appears.
 
-<figure><img src="../.gitbook/assets/tour_38_settings_storage.png" alt="Settings storage tab"><figcaption><p>Settings — Storage</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_38_settings_storage_v2.0.2.png" alt="Settings storage tab"><figcaption><p>Settings — Storage</p></figcaption></figure>
 
 ### Storage
 
 Storage and network file sharing settings.
 
-<figure><img src="../.gitbook/assets/tour_44_settings_samba.png" alt="Samba file sharing popup"><figcaption><p>Settings — Samba File Sharing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_44_settings_samba_v2.0.2.png" alt="Samba file sharing popup"><figcaption><p>Settings — Samba File Sharing</p></figcaption></figure>
 
 - **Samba File Sharing**: opens a popup for sharing your Resources folder over the network (SMB). Its button reads **Install** if Samba is not installed yet (the Hypno 2 needs to be online), then **Sharing: OFF** / **Sharing: ON**; tap it to switch sharing, and **Close** to leave.
 - When sharing is ON the popup shows the address to connect to from a computer on the same network (smb://<your device nickname>.local, e.g. smb://hypno2.local), and a hint for connecting from iOS (Files > ... > Connect to Server)
@@ -520,7 +520,7 @@ Storage and network file sharing settings.
 
 ### Cloud
 
-<figure><img src="../.gitbook/assets/tour_43_settings_cloud.png" alt="Settings Cloud tab"><figcaption><p>Settings — Cloud</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_43_settings_cloud_v2.0.2.png" alt="Settings Cloud tab"><figcaption><p>Settings — Cloud</p></figcaption></figure>
 
 Sleepy Cloud and System Link, in one tab. From the top:
 - **Sleepy Cloud** row: **Sleepy Cloud: Install** (installs Sleepy Cloud over the network; the Hypno 2 must be online), then **Sleepy Cloud: Sign In** (the keyboard asks for your account name or email, then your password). Once signed in the row shows your account with a colored sync status dot. Tap it to open a panel with the sync status, storage used (and your plan's limit), active and queued transfers with their speed, and the buttons **Pause Transfers** / **Resume Transfers**, **Retry Failed (N)** (when some transfers failed), **Sign Out** and **Close**.
@@ -546,7 +546,7 @@ Encoders on this tab: left selects the tab, right selects the row and pressing i
 
 ## Hardware Map (Mezzz Integration)
 
-<figure><img src="../.gitbook/assets/tour_40_mezzz_map.png" alt="Mezzz hardware map"><figcaption><p>Mezzz Hardware Control Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_40_mezzz_map_v2.0.2.png" alt="Mezzz hardware map"><figcaption><p>Mezzz Hardware Control Map</p></figcaption></figure>
 
 Visual overlay showing how hardware controls map to on-screen parameters. Press the center button on Mezzz to pull up this special map.
 - **Center diagram**: circular layout of the Mezzz controller with labeled encoder positions
@@ -555,7 +555,7 @@ Visual overlay showing how hardware controls map to on-screen parameters. Press 
 
 ## Shader Editor
 
-<figure><img src="../.gitbook/assets/tour_42_text_editor.png" alt="Text editor"><figcaption><p>Shader Code Editor</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tour_42_text_editor_v2.0.2.png" alt="Text editor"><figcaption><p>Shader Code Editor</p></figcaption></figure>
 
 Built-in GLSL fragment shader editor for creating and modifying custom visual effects. Select a shader (or any text file) in the browser and tap **View** to open it in the editor.
 - **Code area**: GLSL source code with syntax highlighting — keywords (uniform, float) in different colors, types (sampler2D, mat2) highlighted, values and defines color-coded
